@@ -21,10 +21,11 @@
 
 
   <!--Informacion Principal del Proyecto -->
-  <br><br><br>
+  <br>
   <div style="font-family: cursive">
    <div style="Text-Align:center">
     <h1 style="color: #4e818b">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Proyecto Multimedios 2015</h1>
+    <h1 style="color: #4e818b">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Centro Educativo Montenegro</h1>
     </div>
     </div>
     <p><br/></p>
@@ -72,7 +73,8 @@
 
   						<div class="form-group">
     							<div class="col-sm-offset-0 col-sm-12">
-      							<button type="submit" class="btn btn-primary">Submit</button>
+      							<button type="submit" class="btn btn-primary">Ingresar</button>
+                                <button type="button" onclick="location.href='Login.php'" class="btn btn-secondary">Crear Cuenta</button>
 
     							</div>
 
