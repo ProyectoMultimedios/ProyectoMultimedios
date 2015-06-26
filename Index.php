@@ -50,11 +50,11 @@
     							</div>
   						</div>
   						<div class="form-group">
-    							<label for="inputEmail3" class="col-sm-2 control-label">Contraseña</label> <br><br>
+    							<label for="" class="col-sm-2 control-label">Contraseña</label> <br><br>
     							<div class="col-sm-10">
     								<div class="input-group">
     									<span class="input-group-addon">***</span>
-      								<input type="email" class="form-control" id="inputEmail3" placeholder="">
+      								<input type="password" class="form-control" id="inputEmail3" placeholder="">
       							</div>
 
     							</div>
