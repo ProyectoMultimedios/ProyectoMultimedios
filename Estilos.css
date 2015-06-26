@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+   color: #6f9525;
+   font-family:inherit;
+
+
+}
+
+div1 {
+    width: 500px;
+    height: auto;
+  margin: 0 auto;
+    text-align: center;
+    border-top-width: 10px;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 10px;
+    border-style: groove;
+    border-color: #d3d3d3;
+}
+
+
