@@ -21,14 +21,10 @@
 
 
   <!--Informacion Principal del Proyecto -->
+  <br><br><br>
   <div style="font-family: cursive">
    <div style="Text-Align:center">
-    <h1 style="color: #4e818b">Proyecto Multimedios 2015</h1>
-    <h1 style="color: #4e818b">Integrantes:</h1>
-    <h1 style="color: #4e818b">Celina Rosales (carne).</h1>
-    <h1 style="color: #4e818b">Caleb Delgado B12196.</h1>
-    <h1 style="color: #4e818b">Priscilla Salas (Carne).</h1>
-    <h1 style="color: #4e818b">Andrey Barahona (carne).</h1>
+    <h1 style="color: #4e818b">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Proyecto Multimedios 2015</h1>
     </div>
     </div>
     <p><br/></p>
@@ -41,11 +37,11 @@
   			<div class="panel panel-default">
   				<div class="panel-body">
     					<div class="page-header" style="margin-top:5px;">
-    						<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Inicio de Sesion</h3>
+    						<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Inicio de Sesion</h3>
     					</div>
     					<form class="form-horizontal" role="form">
   						<div class="form-group">
-    				<label style="text-Align:left" for="inputfn3" class="col-sm-2 control-label">Usuario:</label>
+    				<label style="text-Align:left" for="inputfn3" class="col-sm-3 control-label">Usuario</label> <br><br>
     							<div class="col-sm-10">
     								<div class="input-group">
     									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
@@ -54,14 +50,17 @@
     							</div>
   						</div>
   						<div class="form-group">
-    							<label for="inputEmail3" class="col-sm-2 control-label">Contraseña:</label>
+    							<label for="inputEmail3" class="col-sm-2 control-label">Contraseña</label> <br><br>
     							<div class="col-sm-10">
     								<div class="input-group">
     									<span class="input-group-addon">***</span>
       								<input type="email" class="form-control" id="inputEmail3" placeholder="">
       							</div>
+
     							</div>
   						</div>
+  						<div class="page-header" style="margin-top:5px;">
+    					</div>
   						<div class="form-group">
     							<div class="col-sm-10">
     								<div class="input-group">
@@ -70,13 +69,15 @@
       							</div>
     							</div>
   						</div>
+
   						<div class="form-group">
-    							<div class="col-sm-offset-2 col-sm-10">
-      							<button type="submit" class="btn btn-primary">Ingresar</button>
-      							<button type="submit" class="btn btn-primary">Ingresar</button>
+    							<div class="col-sm-offset-0 col-sm-12">
+      							<button type="submit" class="btn btn-primary">Submit</button>
+
     							</div>
-    							<div class="placeholder-100pct">----------------</div>
+
   						</div>
+
 					</form>
   				</div>
 			</div>
