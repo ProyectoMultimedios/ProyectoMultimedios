@@ -21,7 +21,8 @@
 	</label>
 	<label class="title">Información de Estudiante</label>
 	<span class="nameFirst">
-	<input placeholder=" Nombre" type="text" size="8" name="Nombre" required="required"/>         <span class="icon-place"></span></span><span class="nameLast"><input placeholder="Apellido" type="text" size="14"name="Apellido" required="required"/><span class="icon-place"></span></span>
+
+	<input placeholder=" Nombre" type="text" size="8" name="Nombre" required="required"/>         <span class="icon-place"></span></span><span class="nameLast"><input             placeholder="Apellido" type="text" size="14"name="Apellido" required="required"/><span class="icon-place"></span></span>
 	</div>
 
 	<div class="element-input">
@@ -32,14 +33,14 @@
 
 	<div class="element-checkbox"><label class="title">Sexo</label>
     <div class="column column2">
-   <label><input type="checkbox" name="checkbox1" value="Masculino"/ ><span>Masculino</span>      </label>
+   <label><input type="checkbox" name="Genero" value="Masculino"/ ><span>Masculino</span>      </label>
    </div>
     <span class="clearfix"></span>
-    <div class="column column2"><label><input type="checkbox" name="checkbox2"                      value="Femenino"/ ><span>Femenino</span></label></div>
+    <div class="column column2"><label><input type="checkbox" name="Genero"                      value="Femenino"/ ><span>Femenino</span></label></div>
     <span class="clearfix"></span>
     </div>
 
-    <label class="title">Información del Encargado</label>
+
 
 	<div class="element-name"><label class="title"></label><span class="nameFirst"><input         placeholder=" Nombre Encargado" type="text" size="8" name="NombreEncargado" /><span           class="icon-place"></span></span><span class="nameLast"><input placeholder=" Apellido         Encargado" type="text" size="14" name="ApellidoEncargado" /><span class="icon-place">        </span></span></div>
 
