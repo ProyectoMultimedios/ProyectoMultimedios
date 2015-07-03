@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-07-2015 a las 19:34:16
+-- Tiempo de generación: 03-07-2015 a las 20:33:58
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -65,13 +65,13 @@ CREATE TABLE IF NOT EXISTS `curso_nivel_profesor` (
 --
 
 CREATE TABLE IF NOT EXISTS `estudiantes` (
-`Id_Alumnos` int(11) NOT NULL,
+`Id` int(11) NOT NULL,
   `Nombre` varchar(45) DEFAULT NULL,
   `Apellido` varchar(45) DEFAULT NULL,
-  `Carnet` varchar(45) DEFAULT NULL,
-  `Genero` varchar(30) DEFAULT NULL,
+  `Carnet` varchar(30) DEFAULT NULL,
+  `Genero` varchar(45) DEFAULT NULL,
   `Id_Padre` int(11) DEFAULT NULL,
-  `Estado` varchar(45) DEFAULT NULL
+  `Estado` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -121,13 +121,25 @@ CREATE TABLE IF NOT EXISTS `notas` (
 --
 
 CREATE TABLE IF NOT EXISTS `padre` (
-`Id_padre` int(11) NOT NULL,
+`Id_Padre` int(11) NOT NULL,
   `Nombre` varchar(30) NOT NULL,
   `Apellido` varchar(30) NOT NULL,
   `Identificacion` varchar(30) NOT NULL,
   `telefono` varchar(30) NOT NULL,
   `Estado` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `padre`
+--
+
+INSERT INTO `padre` (`Id_Padre`, `Nombre`, `Apellido`, `Identificacion`, `telefono`, `Estado`) VALUES
+(3, 'celina', 'rosales', '504010219', '71466619', 'Activo'),
+(4, 'celina', 'rosales', '504010219', '71466619', 'Activo'),
+(5, 'celina', 'rosales', '504010219', '71466619', 'Activo'),
+(6, '', '', '', '', 'Activo'),
+(7, '', '', '', '', 'Activo'),
+(8, 'miguel', 'rosa', '123', '8123', 'Activo');
 
 -- --------------------------------------------------------
 
@@ -199,7 +211,7 @@ ALTER TABLE `curso_nivel_profesor`
 -- Indices de la tabla `estudiantes`
 --
 ALTER TABLE `estudiantes`
- ADD PRIMARY KEY (`Id_Alumnos`);
+ ADD PRIMARY KEY (`Id`);
 
 --
 -- Indices de la tabla `estudiantes_matriculados`
@@ -223,7 +235,7 @@ ALTER TABLE `notas`
 -- Indices de la tabla `padre`
 --
 ALTER TABLE `padre`
- ADD PRIMARY KEY (`Id_padre`);
+ ADD PRIMARY KEY (`Id_Padre`);
 
 --
 -- Indices de la tabla `profesores`
@@ -266,7 +278,7 @@ MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `estudiantes`
 --
 ALTER TABLE `estudiantes`
-MODIFY `Id_Alumnos` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `estudiantes_matriculados`
 --
@@ -286,7 +298,7 @@ MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT de la tabla `padre`
 --
 ALTER TABLE `padre`
-MODIFY `Id_padre` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `Id_Padre` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `profesores`
 --
@@ -325,7 +337,7 @@ ADD CONSTRAINT `fk_Curso_Nivel_Profesores1` FOREIGN KEY (`Profesores_Id`) REFERE
 -- Filtros para la tabla `estudiantes_matriculados`
 --
 ALTER TABLE `estudiantes_matriculados`
-ADD CONSTRAINT `fk_Estudiantes_Matriculados_Estudiantes` FOREIGN KEY (`Estudiantes_Id`) REFERENCES `estudiantes` (`Id_Alumnos`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_Estudiantes_Matriculados_Estudiantes` FOREIGN KEY (`Estudiantes_Id`) REFERENCES `estudiantes` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
 ADD CONSTRAINT `fk_Estudiantes_Matriculados_Secciones1` FOREIGN KEY (`Secciones_Id`) REFERENCES `secciones` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
