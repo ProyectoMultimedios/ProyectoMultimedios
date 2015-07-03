@@ -20,7 +20,13 @@
 	<label class="title">Información de Estudiante</label>
 	<span class="nameFirst">
 
-	<input placeholder=" Nombre" type="text" size="8" name="Nombre" required="required"/>         <span class="icon-place"></span></span><span class="nameLast"><input             placeholder="Apellido" type="text" size="14"name="Apellido" required="required"/><span class="icon-place"></span></span>
+	<input placeholder=" Nombre" type="text" size="8" name="Nombre" required="required"/>         <span class="icon-place"></span></span><span class="nameLast"><input              placeholder="Apellido" type="text" size="14"name="Apellido" required="required"/><span class="icon-place"></span></span>
+	</div>
+
+	<div class="element-input">
+	<label class="title"><span class="required">*</span></label>
+	<div class="item-cont">
+	<input class="Large" type="text" name="Apellido2" required="required" placeholder="Segundo Apellido"/>     <span class="icon-place"></span></div>
 	</div>
 
 	<div class="element-input">
@@ -40,6 +46,11 @@
 
 	<div class="element-name"><label class="title"></label><span class="nameFirst"><input         placeholder=" Nombre Encargado" type="text" size="8" name="NombreEncargado" /><span           class="icon-place"></span></span><span class="nameLast"><input placeholder=" Apellido         Encargado" type="text" size="14" name="ApellidoEncargado" /><span class="icon-place">        </span></span></div>
 
+<div class="element-input">
+	<label class="title"><span class="required">*</span></label>
+	<div class="item-cont">
+	<input class="Large" type="text" name="Apellido2Encargado" required="required" placeholder="Segundo Apellido"/><span class="icon-place"></span></div>
+	</div>
 
 	<div class="element-input"><label class="title"></label><div class="item-cont"><input         class="large" type="text" name="Identificacion" placeholder="Identificación"/><span           class="icon-place"></span></div></div>
 
