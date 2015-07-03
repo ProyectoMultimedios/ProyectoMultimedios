@@ -18,12 +18,12 @@
       <tr>
 
 
-       <th>Id</th>
-        <th>Nombre</th>
-        <th>Dirección</th>
-        <th>Teléfono</th>
-        <th>Correo</th>
-        <th>Editar</th>
+       <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Carnet</th>
+        <th>Genero</th>
+        <th>Modificar</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -32,19 +32,19 @@
        <?php
 
 
-$conn = mysqli_connect("localhost", "root", "","ucr") or die (mysql_error ());
+$conn = mysqli_connect("localhost", "root", "","Proyecto") or die (mysql_error ());
 
-$strSQL =  "SELECT id, nombre, direccion, telefono,correo FROM estudiante";
+$strSQL =  "SELECT * FROM alumnos";
 $rs = mysqli_query($conn, $strSQL);
 
         if (mysqli_num_rows($rs)>0){
 
             while ($row = mysqli_fetch_row($rs)){
-                       echo "<tr><td>$row[0]
-                           </td><td>$row[1]
+                       echo "<tr><td>$row[1]
                            </td><td>$row[2]
                            </td><td>$row[3]
                            </td><td>$row[4]
+                           </td><td>$row[7]
                            </td></tr>";
                 }
         }
