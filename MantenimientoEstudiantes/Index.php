@@ -2,12 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Estudiante </title>
+	<title>Estudiante ucr </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="blurBg-false" style="background-color:#EBEBEB">
-
-
 
 <!-- Start Formoid form-->
 <link rel="stylesheet" href="index_files/formoid1/formoid-solid-blue.css" type="text/css" />
@@ -39,8 +37,6 @@
     <div class="column column2"><label><input type="checkbox" name="Genero"                      value="Femenino"/ ><span>Femenino</span></label></div>
     <span class="clearfix"></span>
     </div>
-
-
 
 	<div class="element-name"><label class="title"></label><span class="nameFirst"><input         placeholder=" Nombre Encargado" type="text" size="8" name="NombreEncargado" /><span           class="icon-place"></span></span><span class="nameLast"><input placeholder=" Apellido         Encargado" type="text" size="14" name="ApellidoEncargado" /><span class="icon-place">        </span></span></div>
 
