@@ -52,7 +52,7 @@
              <label for="">Contraseña:</label>
               <div class="input-group">
                <div class="input-group-addon"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span></div>
-               <input type="text" id="Contrasena1" class="form-control" alt="Contrasena1" name="Contrasena1" placeholder="Ingrese su contraseña">
+               <input type="password" id="Contrasena1" class="form-control" alt="Contrasena1" name="Contrasena1" placeholder="Ingrese su contraseña">
                </div>
            </div>
 
@@ -60,7 +60,7 @@
                <label for="">Confirmar Contraseña</label>
                <div class="input-group">
                <div class="input-group-addon"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span></div>
-               <input type="text" id="Contrasena2" class="form-control" alt="Contrasena2" name="Contrasena2" placeholder="Confirmar Contraseña">
+               <input type="password" id="Contrasena2" class="form-control" alt="Contrasena2" name="Contrasena2" placeholder="Confirmar Contraseña">
                </div>
            </div>
            <div class="form-group">
@@ -90,8 +90,8 @@
            <div class="input-group">
            <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
            <select name="Tipo" id="option" class="form-control">
-               <option value="Administrador">Administrador</option>
-               <option value="Profesor">Profesor</option>
+               <option value="0">Administrador</option>
+               <option value="1">Profesor</option>
            </select>
 
            </div>

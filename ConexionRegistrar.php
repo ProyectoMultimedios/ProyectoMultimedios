@@ -24,7 +24,7 @@ VALUES ('$NombreUsuario', '$Contrasena', '$Nombre','$Apellido1','$Apellido2','$T
 
 if (mysqli_query($conn, $sql)) {
     echo "Usuario Insertado";
-    header("Location: Index.php");
+    header("Location: Registro.php");
     die();
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
