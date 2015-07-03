@@ -48,7 +48,7 @@
              <label for="txtContraseña1">Contraseña:</label>
               <div class="input-group">
                <div class="input-group-addon"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span></div>
-               <input type="text" class="form-control" name="txtContrasena1" placeholder="Ingrese su contraseña">
+               <input type="text" class="form-control" alt="Contrasena1" name="txtContrasena1" placeholder="Ingrese su contraseña">
                </div>
            </div>
 
@@ -56,28 +56,28 @@
                <label for="txtContraseña2">Confirmar Contraseña</label>
                <div class="input-group">
                <div class="input-group-addon"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span></div>
-               <input type="text" class="form-control" name="txtContraseña2" placeholder="Confirmar Contraseña">
+               <input type="text" class="form-control" alt="Contrasena2" name="txtContraseña2" placeholder="Confirmar Contraseña">
                </div>
            </div>
            <div class="form-group">
            <label for="txtNombre">Nombre:</label>
            <div class="input-group">
            <div class="input-group-addon"><span class="glyphicon glyphicon-font" aria-hidden="true"></span></div>
-           <input type="text" name="txtNombre" placeholder="Ingrese el Nombre" class="form-control">
+           <input type="text" name="txtNombre" alt="Contrasena2" placeholder="Ingrese el Nombre" class="form-control">
            </div>
            </div>
            <div class="form-group">
            <label for="txtApellido1">Primer Apellido:</label>
            <div class="input-group">
            <div class="input-group-addon"><span class="glyphicon glyphicon-text-color" aria-hidden="true"></span></div>
-           <input type="text" name="txtApellido1" placeholder="Ingrese el Primer Apellido" class="form-control">
+           <input type="text" name="txtApellido1" alt="Apellido1" placeholder="Ingrese el Primer Apellido" class="form-control">
            </div>
            </div>
            <div class="form-group">
            <label for="txtApellido2">Segundo Apellido:</label>
            <div class="input-group">
            <div class="input-group-addon"><span class="glyphicon glyphicon-text-background" aria-hidden="true"></span></div>
-           <input type="text" name="txtApellido2" placeholder="Ingrese el Segundo Apellido" class="form-control">
+           <input type="text" name="txtApellido2" alt="Apellido2" placeholder="Ingrese el Segundo Apellido" class="form-control">
                     </div>
                     </div>
                      <div class="form-group">
