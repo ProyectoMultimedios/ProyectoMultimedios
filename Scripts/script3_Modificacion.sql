@@ -230,21 +230,12 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `multimedios2.0`.`usuarios` (
   `Id` INT(11) NOT NULL AUTO_INCREMENT,
-<<<<<<< HEAD
-  `UserID` VARCHAR(45) NULL DEFAULT NULL,
-  `Contrasena` VARCHAR(45) NULL DEFAULT NULL,
-  `Nombre` VARCHAR(45) NULL DEFAULT NULL,
-  `Apellido1` VARCHAR(45) NULL DEFAULT NULL,
-  `Apellido2` VARCHAR(45) NULL DEFAULT NULL,
-  `Tipo` boolean NULL DEFAULT NULL,
-=======
   `UserID` VARCHAR(45) NOT NULL,
   `Contrasena` VARCHAR(45) NOT NULL,
   `Nombre` VARCHAR(45) NOT NULL,
   `Apellido1` VARCHAR(45) NOT NULL,
   `Apellido2` VARCHAR(45) NOT NULL,
   `Tipo` SMALLINT(1) NOT NULL,
->>>>>>> origin/master
   PRIMARY KEY (`Id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 3

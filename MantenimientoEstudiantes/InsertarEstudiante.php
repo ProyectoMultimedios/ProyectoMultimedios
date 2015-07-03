@@ -27,10 +27,10 @@ if (!$conn) {
 $conn= mysql_connect ($servername, $username, $password);
 mysql_select_db('multimedios2.0');
 
-$sql = "INSERT INTO padre ( Nombre, Apellido, Identificacion, telefono, Estado )
+$sql = "INSERT INTO padres ( Nombre, Apellido, Identificacion, telefono, Estado )
 VALUES ('$NombreEncargado', '$ApellidoEncargado', '$Identificacion','$Telefono','Activo')";
 
-$sql1 = "SELECT Id_Padre FROM padre";
+$sql1 = "SELECT Id_Padre FROM padres";
 
 $Padre= mysql_query($sql) or die ('error'. mysql_error());
 $select= mysql_query($sql1) or die ('error'. mysql_error());
