@@ -8,7 +8,7 @@
     <title>Proyecto Multimedios</title>
 
     <!-- Bootstrap -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -74,7 +74,7 @@
   						<div class="form-group">
     							<div class="col-sm-offset-0 col-sm-12">
       							<button type="submit" class="btn btn-primary">Ingresar</button>
-                                <button type="button" onclick="location.href='Login.php'" class="btn btn-secondary">Crear Cuenta</button>
+                                <button type="button" onclick="location.href='registro.php'" class="btn btn-secondary">Crear Cuenta</button>
 
     							</div>
 
