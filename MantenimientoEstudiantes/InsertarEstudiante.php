@@ -43,16 +43,6 @@ VALUES ('$Nombre', '$Apellido', '$Carnet','Mujer', $select[0] )";
 $alumno= mysql_query($sql2) or die ('error'. mysql_error());
 
 
-/*if (mysqli_query($conn, $sql)) {
-    echo "Registro Insertado";
-    header("Location: index.php");
-    die();
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }*/
 
-
-
-//mysqli_close($conn);
 
 ?>
