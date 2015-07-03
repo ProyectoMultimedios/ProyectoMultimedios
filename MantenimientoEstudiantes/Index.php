@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Estudiante - Formoid bootstrap form</title>
+	<title>Estudiante </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="blurBg-false" style="background-color:#EBEBEB">
