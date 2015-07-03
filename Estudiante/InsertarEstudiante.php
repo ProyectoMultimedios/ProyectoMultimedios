@@ -18,36 +18,38 @@ $dbname = "proyecto";
 
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+/*$conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
     die("fallo conexión: " . mysqli_connect_error());
-}
+}*/
+
+$conn= mysql_connect ($servername, $username, $password);
 mysql_select_db('proyecto');
 
 $sql = "INSERT INTO proyecto.padre ( Nombre, Apellido, Identificacion, telefono )
 VALUES ('$NombreEncargado', '$ApellidoEncargado', '$Identificacion','$Telefono')";
 
-/*$sql1= "select Id_Padre from proyecto.padre where Identificacion= $Identificacion";
+$sql1 = "SELECT Id_Padre FROM padre";
 
-
-
-//$Padre= mysql_query($sql) or die ('error'. mysql_error());
-
+$Padre= mysql_query($sql) or die ('error'. mysql_error());
 $select= mysql_query($sql1) or die ('error'. mysql_error());
-
+$select = mysql_fetch_array($select);
+echo "$select[0]";
 
 $sql2 = "INSERT INTO proyecto.alumnos (Nombre, Apellido, Carnet,Genero,Id_Padre )
-VALUES ('$Nombre', '$Apellido', '$Carnet','Mujer', $select )";*/
+VALUES ('$Nombre', '$Apellido', '$Carnet','Mujer', $select[0] )";
+
+$alumno= mysql_query($sql2) or die ('error'. mysql_error());
 
 
-if (mysqli_query($conn, $sql)) {
+/*if (mysqli_query($conn, $sql)) {
     echo "Registro Insertado";
     header("Location: index.php");
     die();
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
+    }*/
 
 
 
