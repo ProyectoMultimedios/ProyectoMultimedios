@@ -14,7 +14,7 @@ $Telefono = $_POST["Telefono"];
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "proyecto";
+$dbname = "multimedios2.0";
 
 
 // Create connection
@@ -25,9 +25,9 @@ if (!$conn) {
 }*/
 
 $conn= mysql_connect ($servername, $username, $password);
-mysql_select_db('proyecto');
+mysql_select_db('multimedios2.0');
 
-$sql = "INSERT INTO proyecto.padre ( Nombre, Apellido, Identificacion, telefono, Estado )
+$sql = "INSERT INTO padre ( Nombre, Apellido, Identificacion, telefono, Estado )
 VALUES ('$NombreEncargado', '$ApellidoEncargado', '$Identificacion','$Telefono','Activo')";
 
 $sql1 = "SELECT Id_Padre FROM padre";
@@ -36,9 +36,7 @@ $Padre= mysql_query($sql) or die ('error'. mysql_error());
 $select= mysql_query($sql1) or die ('error'. mysql_error());
 $select = mysql_fetch_array($select);
 
-
-
-$sql2 = "INSERT INTO proyecto.alumnos (Nombre, Apellido, Carnet,Genero,Id_Padre, Estado)
+$sql2 = "INSERT INTO Estudiantes (Nombre, Apellido, Carnet,Genero,Id_Padre, Estado)
 VALUES ('$Nombre', '$Apellido', '$Carnet','Mujer', $select[0],'Activo')";
 
 $alumno= mysql_query($sql2) or die ('error'. mysql_error());
