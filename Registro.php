@@ -40,7 +40,7 @@
                <label for="nombre">Nombre de Usuario:</label>
                <div class="input-group">
                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-            <input type="text" class="form-control" id="txtNombre" placeholder="Nombre de Usuario">
+            <input type="text" class="form-control" alt="Nombre" name="txtNombreUsuario" placeholder="Nombre de Usuario">
             </div>
            </div>
 
@@ -48,7 +48,7 @@
              <label for="txtContraseña1">Contraseña:</label>
               <div class="input-group">
                <div class="input-group-addon"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span></div>
-               <input type="text" class="form-control" id="txtContraseña1" placeholder="Ingrese su contraseña">
+               <input type="text" class="form-control" name="txtContrasena1" placeholder="Ingrese su contraseña">
                </div>
            </div>
 
@@ -56,35 +56,35 @@
                <label for="txtContraseña2">Confirmar Contraseña</label>
                <div class="input-group">
                <div class="input-group-addon"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span></div>
-               <input type="text" class="form-control" id="txtContraseña2" placeholder="Confirmar Contraseña">
+               <input type="text" class="form-control" name="txtContraseña2" placeholder="Confirmar Contraseña">
                </div>
            </div>
            <div class="form-group">
            <label for="txtNombre">Nombre:</label>
            <div class="input-group">
            <div class="input-group-addon"><span class="glyphicon glyphicon-font" aria-hidden="true"></span></div>
-           <input type="text" id="txtNombre" placeholder="Ingrese el Nombre" class="form-control">
+           <input type="text" name="txtNombre" placeholder="Ingrese el Nombre" class="form-control">
            </div>
            </div>
            <div class="form-group">
            <label for="txtApellido1">Primer Apellido:</label>
            <div class="input-group">
            <div class="input-group-addon"><span class="glyphicon glyphicon-text-color" aria-hidden="true"></span></div>
-           <input type="text" id="txtApellido1" placeholder="Ingrese el Primer Apellido" class="form-control">
+           <input type="text" name="txtApellido1" placeholder="Ingrese el Primer Apellido" class="form-control">
            </div>
            </div>
            <div class="form-group">
            <label for="txtApellido2">Segundo Apellido:</label>
            <div class="input-group">
            <div class="input-group-addon"><span class="glyphicon glyphicon-text-background" aria-hidden="true"></span></div>
-           <input type="text" id="txtApellido2" placeholder="Ingrese el Segundo Apellido" class="form-control">
+           <input type="text" name="txtApellido2" placeholder="Ingrese el Segundo Apellido" class="form-control">
                     </div>
                     </div>
                      <div class="form-group">
            <label for="txtNombre">Tipo de Usuario:</label>
            <div class="input-group">
            <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
-           <select name="" id="option" class="form-control">
+           <select name="sltTipo" id="option" class="form-control">
                <option value="">Administrador</option>
                <option value="">Profesor</option>
            </select>
@@ -96,7 +96,7 @@
                                    </div>
                                    <br>
 
-                          <button type="submit" class="btn btn-primary">Ingresar Usuario</button>
+                          <button type="submit" value="Aceptar" class="btn btn-primary">Ingresar Usuario</button>
                           <button type="button" class="btn btn-secondary">Regresar al Login</button>
 
 
