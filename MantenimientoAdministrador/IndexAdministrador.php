@@ -44,6 +44,16 @@
 
                 </li>
                 <li>
+                    <a href="#">Niveles</a>
+                    <ul>
+          		<li><a href="modCursos/">Agregar niveles</a>
+                </li>
+
+                <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
+          	</ul>
+          </li>
+
+                <li>
                     <a href="#">Cursos</a>
                     <ul>
           		<li><a href="modCursos/">Cursos</a>
