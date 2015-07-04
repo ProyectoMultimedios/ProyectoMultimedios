@@ -56,7 +56,12 @@
 
 	<div class="element-phone"><label class="title"></label><div class="item-cont"><input class="large" type="tel" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="24" name="Telefono" placeholder="Telefono" value=""/><span class="icon-place"></span></div></div>
 
-<div class="submit"><input type="submit" value="Enviar"/></div></form><p class="frmd"><a href="http://formoid.com/v29.php">bootstrap form</a> Formoid.com 2.9</p><script type="text/javascript" src="index_files/formoid1/formoid-solid-blue.js"></script>
+<h4><li><a href="IndexAdministrador.php">
+Atras
+</a></li></h4>
+<div class="submit">
+<input type="submit" value="Enviar"/>
+</div></form><p class="frmd"><a href="http://formoid.com/v29.php">bootstrap form</a> Formoid.com 2.9</p><script type="text/javascript" src="index_files/formoid1/formoid-solid-blue.js"></script>
 
 
 
