@@ -59,6 +59,7 @@ $rs = mysqli_query($conn, $strSQL);
 
 
     </tbody>
+
   </table></div><button type="submit" class="btn btn-default">Atras</button>
 </form>
 

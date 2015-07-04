@@ -46,5 +46,5 @@ $sql2 = "INSERT INTO estudiantes (IdPadres, Nombre, Apellido1,Apellido2, Carnet,
 VALUES ( $select[0],'$Nombre', '$Apellido','$Apellido2', '$Carnet','$Genero','Activo')";
 
 $alumno= mysql_query($sql2) or die ('error'. mysql_error());
-header("Location: FrmIngresarEstudiante.php");
+header("Location:FrmIngresarEstudiante.php");
 ?>
