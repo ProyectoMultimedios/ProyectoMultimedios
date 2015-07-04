@@ -1,7 +1,7 @@
 <?php
 
 $Nombre = $_POST["Nombre"];
-$Apellido = $_POST["Apellido"];
+$Apellido1 = $_POST["Apellido1"];
 $Apellido2= $_POST["Apellido2"];
 $Carnet = $_POST["Carnet"];
 $Genero = $_POST["Genero"];

@@ -44,39 +44,67 @@
 
                 </li>
                 <li>
-                    <a href="#">Cursos</a>
+                    <a href="#">Niveles</a>
                     <ul>
-          		<li><a href="modCursos/">Cursos</a>
+          		<li><a href="frmIngresarNivel.php">Agregar niveles</a>
                 </li>
 
                 <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
           	</ul>
           </li>
 
+                <li>
+                    <a href="#">Cursos</a>
+                    <ul>
+          		<li><a href="FrmAgregarCurso.php">Agregar Cursos</a>
+                </li>
+
+                <li><a href="ListarCursos.php">Listar Cursos</a></li>
+
+                <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
+          	</ul>
+          </li>
+
+
+
+               <li>
+          	<a href="#">Profesores</a>
+            <ul>
+
+<li><a href="FrmRegistroProfesor.php">Registrar Profesores</a></li>
+ <li><a href="buscarProfesor.php">Editar Profesores</a></li>
+<li><a href="FrmBuscarEliminar.php">Eliminar Profesores</a></li>
+<li><a href="Listar.php">Listar Profesores</a></li>
+
+
+            </ul>
+          </li>
+
                <li>
           	<a href="#">Estudiantes</a>
             <ul>
+
 <li><a href="FrmingresarEstudiante.php">Ingresar Estudiantes</a></li>
  <li><a href="FrmBuscarEstudianteEditar.php">Editar Estudiantes</a></li>
 <li><a href="FrmBuscarEstudianteEliminar.php">Eliminar Estudiantes</a></li>
 <li><a href="ListarEstudiantes.php">Listar Estudiantes</a></li>
-
 <li><a href="modPadres/">Padres</a></li>
 <li><a href="modParentesco/">Parentesco</a></li>
+
             </ul>
           </li>
 
                <li><a href="#">Secciones</a>
           	<ul>
             	<li><a href="modGrupos/">Grupos</a></li>
-            	<li><a href="modAsistencia/">Asistencia</a></li>
-                <li><a href="modNotas/">Notas</a></li>
+            	<li><a href="FrmAusenciasTardiasEscapadas.php">Asistencia</a></li>
+                <li><a href="FrmAgregarNotas.php">Notas</a></li>
                 <li><a href="modCursosGrupo/">Asignar Cursos</a></li>
             </ul>
           </li>
 
                <li><a href="modMatricular/">Matricular</a></li>
-          <li><a href="modPersonal/">Personal</a></li>
+
 
                 <li><a href="logout.php">Salir</a></li>
             </ul>
