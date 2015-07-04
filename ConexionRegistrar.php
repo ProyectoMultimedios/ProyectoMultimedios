@@ -74,23 +74,7 @@ $_SESSION["Error9"] = "Este Nombre de Usuario ya Existe";
     $sql = "INSERT INTO usuarios ( UserID, Contrasena, Nombre ,Apellido1,Apellido2,Tipo )
 VALUES ('$NombreUsuario', '$Contrasena1', '$Nombre','$Apellido1','$Apellido2','$Tipo')";
     if (mysqli_query($conn, $sql)) {
-    echo "
-    <!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <title>Document</title>
 
-    <script type='text/javascript'>
-    alert('Usuario Insertado Exitosamente');
-    </script>
-</head>
-<body>
-
-</body>
-</html>
-
-    ";
     header("Location: Registro.php");
     die();
 } else {

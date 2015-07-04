@@ -9,7 +9,7 @@ session_start();
     <title>Registrar Usuario</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <script lang="javascript" src="RegistroExito.js"></script>
+    <script lang="javascript" src="Alert.js"></script>
 
 </head>
 <body style="background-color: #6d84aa">
@@ -37,7 +37,7 @@ session_start();
 
                  <div class="panel panel-default" >
                   <div class="panel-body">
-                  <form action="ConexionRegistrar.php" method="post" onsubmit="return Exito();">
+                  <form action="ConexionRegistrar.php"  method="post">
                      <div class="page-header">
                          <h1>Registrar Usuario</h1>
                      </div>

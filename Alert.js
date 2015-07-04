@@ -3,7 +3,7 @@
 
 
 
-function Exito (){
+function ExitoReg (){
 
 alert("Usuario Insertado Exitosamente");
 
