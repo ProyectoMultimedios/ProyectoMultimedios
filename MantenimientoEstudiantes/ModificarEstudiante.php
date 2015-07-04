@@ -24,6 +24,7 @@ if (mysqli_num_rows($rs)>0){
 
                   while ($row = mysqli_fetch_row($rs)){
                       $ID= $row[0];
+                      $IDPAdre= $row[1];
                        $Nombre = $row[2] ;
                         $Apellido1 = $row[3] ;
                           $Apellido2 = $row[4] ;
@@ -31,6 +32,7 @@ if (mysqli_num_rows($rs)>0){
                            $Genero = $row[6];
                        $Estado = $row[7];
                   }
+
                            echo "
          <form class='form-horizontal' role='form' method='post' action='Editar.php' >
 
@@ -56,6 +58,8 @@ if (mysqli_num_rows($rs)>0){
         <label for='' alt='lblEstado'><b>Estado:</b></label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <input type='text' alt='TxtEstado' name='Estado' value='$Estado'> <br> <br>
 
+
+
  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type='submit' value='Aceptar' > &nbsp
            <input type='submit' value='Cancelar' >
 
@@ -65,7 +69,8 @@ if (mysqli_num_rows($rs)>0){
 ";
 
 
-      }else echo "<br><br><br><br><br><br><br><br><br><br><br><br><br>
+     }else echo " Registros no encontrados
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
                    ";
 
 

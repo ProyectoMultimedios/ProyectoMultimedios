@@ -4,7 +4,7 @@ $Nombre = $_POST["Nombre"];
 $Apellido = $_POST["Apellido"];
 $Apellido2= $_POST["Apellido2"];
 $Carnet = $_POST["Carnet"];
-//$Genero = $_POST["Genero"];
+$Genero = $_POST["Genero"];
 
 $NombreEncargado = $_POST["NombreEncargado"];
 $ApellidoEncargado = $_POST["ApellidoEncargado"];
@@ -43,7 +43,7 @@ $select = mysql_fetch_array($select);
 
 
 $sql2 = "INSERT INTO estudiantes (IdPadres, Nombre, Apellido1,Apellido2, Carnet,Genero, Estado)
-VALUES ( $select[0],'$Nombre', '$Apellido','$Apellido2', '$Carnet','Mujer','Activo')";
+VALUES ( $select[0],'$Nombre', '$Apellido','$Apellido2', '$Carnet','$Genero','Activo')";
 
 $alumno= mysql_query($sql2) or die ('error'. mysql_error());
 header("Location: FrmIngresarEstudiante.php");
