@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Editar Datos</title>
     <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="index_files/formoid1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="bootstrap-3.3.4-dist/js/bootstrap.min.js" > -->
 </head>
@@ -59,9 +60,6 @@ if (mysqli_num_rows($rs)>0){
            <input type='submit' value='Cancelar' >
 
            <br><br>
-
-
-
        </div>
     <br><br><br><br><br><br>
 ";
@@ -72,11 +70,6 @@ if (mysqli_num_rows($rs)>0){
 
 
         ?>
-
-
-
-
-
 
 </body>
 </html>
