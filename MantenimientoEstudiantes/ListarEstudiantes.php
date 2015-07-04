@@ -16,13 +16,13 @@
   <table class="table table-hover">
     <thead>
       <tr>
-
-
        <th>Nombre</th>
         <th>Apellido</th>
+        <th>2 Apellido</th>
         <th>Carnet</th>
         <th>Genero</th>
-        <th>Modificar</th>
+        <th>Estado</th>
+        <th>Accion</th>
         <th></th>
       </tr>
     </thead>
@@ -32,20 +32,23 @@
        <?php
 
 
-$conn = mysqli_connect("localhost", "root", "","Proyecto") or die (mysql_error ());
+$conn = mysqli_connect("localhost", "root", "","Multimedios2.0") or die (mysql_error ());
 
-$strSQL =  "SELECT * FROM alumnos";
+$strSQL =  "SELECT * FROM Estudiantes";
 $rs = mysqli_query($conn, $strSQL);
 
         if (mysqli_num_rows($rs)>0){
 
             while ($row = mysqli_fetch_row($rs)){
-                       echo "<tr><td>$row[1]
-                           </td><td>$row[2]
+                       echo "<tr><td>$row[2]
                            </td><td>$row[3]
                            </td><td>$row[4]
+                           </td><td>$row[5]
+                           </td><td>$row[6]
                            </td><td>$row[7]
-                           </td></tr>";
+                           </td><td>
+							</td>
+                           </tr>";
                 }
         }
 

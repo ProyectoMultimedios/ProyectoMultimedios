@@ -28,17 +28,14 @@ if (!$conn) {
 $conn= mysql_connect ($servername, $username, $password);
 mysql_select_db('multimedios2.0');
 
-<<<<<<< HEAD
-$sql = "INSERT INTO padres ( Nombre, Apellido, Identificacion, telefono, Estado )
-VALUES ('$NombreEncargado', '$ApellidoEncargado', '$Identificacion','$Telefono','Activo')";
 
-$sql1 = "SELECT Id_Padre FROM padres";
-=======
+
+
 $sql = "INSERT INTO padres (Nombre, Apellido1,Apellido2, Identificacion, telefono, Estado )
 VALUES('$NombreEncargado','$ApellidoEncargado','$Apellido2Encargado','$Identificacion','$Telefono','Activo')";
 
 $sql1 = "SELECT IdPadres FROM padres where Identificacion = '$Identificacion' ";
->>>>>>> origin/master
+
 
 $Padre= mysql_query($sql) or die ('error'. mysql_error());
 $select= mysql_query($sql1) or die ('error'. mysql_error());
