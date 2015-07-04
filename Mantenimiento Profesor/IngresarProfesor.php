@@ -5,7 +5,7 @@ $Nombre = $_POST["Nombre"];
 $Apellido1 = $_POST["Apellido1"];
 $Apellido2 = $_POST["Apellido2"];
 $Cedula = $_POST["Cedula"];
-$Usuario = $_POST["Usuario"];
+$Usuario = $_POST["UserID"];
 $Contrasena = $_POST["Contrasena"];
 
 

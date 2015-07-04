@@ -26,6 +26,7 @@
 	    <th>Apellido1</th>
 	    <th>Apellido2</th>
 	    <th>Usuario</th>
+	    <th>Contraseña</th>
 	    <th>Action</th>
 	  </tr>
 	</thead>
@@ -53,8 +54,10 @@ while ($row = $rs->fetch_assoc()) {
 	    <td><?php echo $row['Apellido1']; ?></td>
 	    <td><?php echo $row['Apellido2']; ?></td>
 	    <td><?php echo $row['UserID']; ?></td>
+	    <td><?php echo $row['Contrasena']; ?></td>
 	    <td>
-	    <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal<?php echo $row['kode']; ?>"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+	    <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal<?php echo $row['Cedula']; ?>"><span class="glyphicon glyphicon-pencil" aria-hidden="true"><a href="IngresarProfesor.php"></span></a>
+	    </a>
 	    <a class="btn btn-danger btn-sm"  onclick="deletedata('<?php echo $row['Cedula']; ?>')" ><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
 
 <!-- Modal -->
@@ -63,26 +66,27 @@ while ($row = $rs->fetch_assoc()) {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel<?php echo $row['Cedula']; ?>">Edit Data</h4>
+        <h4 class="modal-title" id="myModalLabel<?php echo $row['Cedula']; ?>">Edit Datas</h4>
       </div>
       <div class="modal-body">
+      <a href="IngresarProfesor.php"></a>
 
 <form>
   <div class="form-group">
     <label for="nm">Nombre</label>
-    <input type="text" class="form-control" id="nm<?php echo $row['Cedula']; ?>" value="<?php echo $row['Nombre']; ?>">
+    <input type="text" class="form-control" id="nm<?php echo $row['Id']; ?>" value="<?php echo $row['Nombre']; ?>">
   </div>
   <div class="form-group">
     <label for="gd">Apellido1</label>
-    <input type="text" class="form-control" id="gd<?php echo $row['Cedula']; ?>" value="<?php echo $row['Apellido1']; ?>">
+    <input type="text" class="form-control" id="gd<?php echo $row['Id']; ?>" value="<?php echo $row['Apellido1']; ?>">
   </div>
   <div class="form-group">
     <label for="pn">Apellido2</label>
-    <input type="text" class="form-control" id="pn<?php echo $row['Cedula']; ?>" value="<?php echo $row['Apellido2']; ?>">
+    <input type="text" class="form-control" id="pn<?php echo $row['Id']; ?>" value="<?php echo $row['Apellido2']; ?>">
   </div>
   <div class="form-group">
     <label for="al">Usuario</label>
-    <input type="text" class="form-control" id="al<?php echo $row['Cedula']; ?>" value="<?php echo $row['Usuario']; ?>">
+    <input type="text" class="form-control" id="al<?php echo $row['Id']; ?>" value="<?php echo $row['UserID']; ?>">
   </div>
 </form>
       

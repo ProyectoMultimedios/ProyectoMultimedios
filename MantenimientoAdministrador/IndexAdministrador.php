@@ -56,8 +56,8 @@
                <li>
           	<a href="#">Estudiantes</a>
             <ul>
-<li><a href="MantenimientoEstudiantes/FrmingresarEstudiante.php">IngregarEstudiantes</a></li>
-                <li><a href="modPadres/">Padres</a></li>
+<li><a href="I.php">  IngregarEstudiantes</a></li>
+                <li><a href="InsertarEdudiante/">AgregarEstudiante</a></li>
                 <li><a href="modParentesco/">Parentesco</a></li>
             </ul>
           </li>

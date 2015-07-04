@@ -1,34 +1,23 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "multimedios2.0";
-$conn= mysql_connect ($servername, $username, $password);
-mysql_select_db('multimedios2.0');
-
-$conn = mysqli_connect("localhost", "root", "","Multimedios2.0") or die (mysql_error ());
+include "config.php";
 if(isset($_GET['id'])){
-    
-    $strSQL =  ("delete from profesores where Cedula=?");
-
-$strSQL->bind_param('s', $id);
+$stmt = $conn->prepare("delete from ajaxtrap where kode=?");
+$stmt->bind_param('s', $id);
 
 $id = $_GET['id'];
 
-if($sql->execute()){
+if($stmt->execute()){
 ?>
-    
 <div class="alert alert-success alert-dismissible" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Success!</strong> Exitoso
+  <strong>Success!</strong> Anda berhasil menghapus data.
 </div>
 <?php
 } else{
 ?>
 <div class="alert alert-danger alert-dismissible" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Error!</strong> Error 
+  <strong>Error!</strong> Maaf terjadi kesalahan, data error.
 </div>
 <?php
 }
@@ -36,9 +25,8 @@ if($sql->execute()){
 ?> 
 <div class="alert alert-warning alert-dismissible" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Warning!</strong> Hola.
+  <strong>Warning!</strong> Maaf anda salah alamat.
 </div>
 <?php
 }
 ?>
-
