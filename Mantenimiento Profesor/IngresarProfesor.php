@@ -19,8 +19,8 @@ $dbname = "multimedios2.0";
 $conn= mysql_connect ($servername, $username, $password);
 mysql_select_db('multimedios2.0');
 
-$sql = "INSERT INTO Profesores (Id, Cedula,Nombre,Apellido1, Apellido2, UserID,Contraseña )
-VALUES ('$Cedula', '$Nombre', '$Apellido1','$Apellido2','$Usuario','$contrasena')";
+$sql = "INSERT INTO Profesores (Cedula,Nombre,Apellido1, Apellido2, UserID,Contrasena )
+VALUES ('$Cedula', '$Nombre', '$Apellido1','$Apellido2','$Usuario','$Contrasena')";
 
 
 $Profe= mysql_query($sql) or die ('error'. mysql_error());
