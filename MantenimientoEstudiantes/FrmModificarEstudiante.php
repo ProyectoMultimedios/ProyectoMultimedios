@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="modificar_files/formoid1/formoid-solid-blue.css" type="text/css" />
 <script type="text/javascript" src="modificar_files/formoid1/jquery.min.js"></script>
 <form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:1000px;min-width:150px" method="post"><div class="title"><h2>Modificar Estudiante</h2></div>
-<div class="element-input"><label class="title"></label><div class="item-cont"><input class="small" type="text" name="input" placeholder="Carnet"/><span class="icon-place"></span>
-<div class="submit"><input type="submit" value="Buscar"/></div>
+<div class="element-input"><label class="title"></label><div class="item-cont"><input class="small" type="text" name="CarnetB" placeholder="Carnet"/><span class="icon-place"></span>
+<div class="submit"><input type="submit" value="Buscar" action="Modificar.php"/></div>
 </div>
 </div>
 
