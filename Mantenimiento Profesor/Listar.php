@@ -25,9 +25,9 @@
 	    <th>Nombre</th>
 	    <th>Apellido1</th>
 	    <th>Apellido2</th>
-	    <th>Usuario</th>
+	   
 	    <th>Contraseña</th>
-	    <th>Action</th>
+	    
 	  </tr>
 	</thead>
 	<tbody>
@@ -41,69 +41,30 @@ $conn = mysqli_connect("localhost", "root", "","Multimedios2.0") or die (mysql_e
 $strSQL =  "SELECT * FROM profesores";
 $rs = mysqli_query($conn, $strSQL);
 
+if (mysqli_num_rows($rs)>0){
 
-while ($row = $rs->fetch_assoc()) {
-?>
-                
-                
-                
-                
-                <tr>
-        <td><?php echo $row['Cedula']; ?></td>
-	    <td><?php echo $row['Nombre']; ?></td>
-	    <td><?php echo $row['Apellido1']; ?></td>
-	    <td><?php echo $row['Apellido2']; ?></td>
-	    <td><?php echo $row['UserID']; ?></td>
-	    <td><?php echo $row['Contrasena']; ?></td>
-	    <td>
-	    <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal<?php echo $row['Cedula']; ?>"><span class="glyphicon glyphicon-pencil" aria-hidden="true"><a href="IngresarProfesor.php"></span></a>
-	    </a>
-	    <a class="btn btn-danger btn-sm"  onclick="deletedata('<?php echo $row['Cedula']; ?>')" ><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+            while ($row = mysqli_fetch_row($rs)){
+                       echo "<tr><td>$row[1]
+                           </td><td>$row[2]
+                           
+                           </td><td>$row[3]
+                           </td><td>$row[4]
+                       
+                           </td><td>$row[6]
+                           </td><td>
+							</td>
+                           </tr>";
+                }
+        }
 
-<!-- Modal -->
-<div class="modal fade" id="myModal<?php echo $row['Cedula']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel<?php echo $row['Cedula']; ?>" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel<?php echo $row['Cedula']; ?>">Edit Datas</h4>
-      </div>
-      <div class="modal-body">
-      <a href="IngresarProfesor.php"></a>
+        ?>
 
-<form>
-  <div class="form-group">
-    <label for="nm">Nombre</label>
-    <input type="text" class="form-control" id="nm<?php echo $row['Id']; ?>" value="<?php echo $row['Nombre']; ?>">
-  </div>
-  <div class="form-group">
-    <label for="gd">Apellido1</label>
-    <input type="text" class="form-control" id="gd<?php echo $row['Id']; ?>" value="<?php echo $row['Apellido1']; ?>">
-  </div>
-  <div class="form-group">
-    <label for="pn">Apellido2</label>
-    <input type="text" class="form-control" id="pn<?php echo $row['Id']; ?>" value="<?php echo $row['Apellido2']; ?>">
-  </div>
-  <div class="form-group">
-    <label for="al">Usuario</label>
-    <input type="text" class="form-control" id="al<?php echo $row['Id']; ?>" value="<?php echo $row['UserID']; ?>">
-  </div>
+
+    </tbody>
+
+  </table></div><button type="submit" class="btn btn-default" >Atras</button>
 </form>
-      
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" onclick="updatedata('<?php echo $row['Cedula']; ?>')" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-	    
-	    </td>
-	  </tr>
 
-    <?php
-}
-?>
-	</tbody>
-      </table>
+</body>
+
+</html>

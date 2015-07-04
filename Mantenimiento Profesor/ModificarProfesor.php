@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Editar Datos</title>
+    <title>Editar Profesor</title>
     <link rel="stylesheet" href="estilos.css">
     <script type="text/javascript" src="index_files/formoid1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="estilos.css">
@@ -28,13 +28,13 @@ if (mysqli_num_rows($rs)>0){
                        $Nombre = $row[2] ;
                         $Apellido1 = $row[3] ;
                           $Apellido2 = $row[4] ;
-                           $UserID = $row[5] ;
+                          
                            $Contrasena = $row[6];
                      
                   }
 
                            echo "
-         <form class='form-horizontal' role='form' method='post' action='Editar.php' >
+         <form class='form-horizontal' role='form' method='post' action='Update.php' >
 
               <h1>Editar Datos</h1>
 
@@ -42,9 +42,8 @@ if (mysqli_num_rows($rs)>0){
       <input type='hidden' alt='Txtid' name='Campo' value='$Id'>
       
       
-      <br> <br><label for='' alt='lblNombre'><b>Nombre:</b> </label> &nbsp&nbsp
-      <input type='text' alt='TxtNombre' name='Nombre' value='$Cedula'> <br> <br>
-      
+      <br> <br><label for='' alt='lblCedula'><b>Cedula:</b> </label> &nbsp&nbsp
+      <input type='text' alt='TxtCedula' name='Cedula' value='$Cedula'> 
       
       <br> <br><label for='' alt='lblNombre'><b>Nombre:</b> </label> &nbsp&nbsp
       <input type='text' alt='TxtNombre' name='Nombre' value='$Nombre'> <br> <br>
@@ -55,11 +54,10 @@ if (mysqli_num_rows($rs)>0){
        <label for='' alt='lblApellido2'><b>Apellido 2:</b></label>
         <input type='text' alt='TxtApellido2' name='Apellido2' value='$Apellido2'> <br> <br>
 
-       <label for='' alt='lblCarnet'><b>Carnet:</b></label> &nbsp&nbsp&nbsp&nbsp
-        <input type='text' alt='TxtCarnet' name='Carnet' value='$UserID'> <br> <br>
+       
 
-        <label for='' alt='lblGenero'><b>Genero:</b></label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <input type='text' alt='TxtGenero' name='Genero' value='$Contrasena'> <br> <br>
+        <label for='' alt='lblContrasena'><b>Contraseña:</b></label> 
+        <input type='text' alt='TxtContrasena' name='Contrasena' value='$Contrasena'> <br> <br>
 
         
 

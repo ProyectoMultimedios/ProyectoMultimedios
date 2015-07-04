@@ -4,7 +4,7 @@ $Nombre = $_POST["Nombre"];
 $Apellido1 = $_POST["Apellido1"];
 $Apellido2 = $_POST["Apellido2"];
 $Cedula =  $_POST["Cedula"]; ;
-$Usuario =  $_POST["UserID"];;
+
 $Contrasena =  $_POST["Contrasena"];;
 
 $servername = "localhost";
@@ -19,7 +19,7 @@ if (!$conn) {
     die("fallo conexión: " . mysqli_connect_error());
 }
 
-$sql = "UPDATE profesores SET Nombre = '$Nombre' ,Apellido1 = '$Apellido1', Apellido2 = '$Apellido2' , Cedula = '$Cedula' , UserID = '$Usuario',Contrasena = '$Contrasena' WHERE Id = $Id";
+$sql = "UPDATE profesores SET Nombre = '$Nombre' ,Apellido1 = '$Apellido1', Apellido2 = '$Apellido2' , Cedula = '$Cedula' ,Contrasena = '$Contrasena' WHERE Id = $Id";
 
 if (mysqli_query($conn, $sql)) {
     echo "Profesor Actualizado";

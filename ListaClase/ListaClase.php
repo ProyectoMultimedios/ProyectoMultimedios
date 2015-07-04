@@ -12,7 +12,7 @@
 <!-- Start Formoid form-->
 <link rel="stylesheet" href="listaclase_files/formoid1/formoid-flat-blue.css" type="text/css" />
 <script type="text/javascript" src="listaclase_files/formoid1/jquery.min.js"></script>
-<form class="formoid-flat-blue" style="background-color:#FFFFFF;font-size:17px;font-family:'Open Sans',Arial,Verdana,sans-serif;color:#00007f;max-width:800px;min-width:150px" method="post"><div class="title"><h2>Lista de clases</h2></div>
+<form class="formoid-flat-blue" style="background-color:#FFFFFF;font-size:17px;font-family:'Open Sans',Arial,Verdana,sans-serif;color:#00007f;max-width:800px;min-width:150px" method="post"action="IngresarNotas.php"><div class="title"><h2>Lista de clases</h2></div>
 
         <div class="element-multiple"><label class="title">Nivel:<span class="required">*</span></label><div class="medium"><select data-no-selected="Seleccionar Nivel" name="multiple2[]" multiple="multiple" required="required">
 
