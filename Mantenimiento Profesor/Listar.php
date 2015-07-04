@@ -70,19 +70,19 @@ while ($row = $rs->fetch_assoc()) {
 <form>
   <div class="form-group">
     <label for="nm">Nombre</label>
-    <input type="text" class="form-control" id="nm<?php echo $row['Cedula']; ?>" value="<?php echo $row['nama']; ?>">
+    <input type="text" class="form-control" id="nm<?php echo $row['Cedula']; ?>" value="<?php echo $row['Nombre']; ?>">
   </div>
   <div class="form-group">
     <label for="gd">Apellido1</label>
-    <input type="text" class="form-control" id="gd<?php echo $row['Cedula']; ?>" value="<?php echo $row['gender']; ?>">
+    <input type="text" class="form-control" id="gd<?php echo $row['Cedula']; ?>" value="<?php echo $row['Apellido1']; ?>">
   </div>
   <div class="form-group">
     <label for="pn">Apellido2</label>
-    <input type="text" class="form-control" id="pn<?php echo $row['Cedula']; ?>" value="<?php echo $row['phone']; ?>">
+    <input type="text" class="form-control" id="pn<?php echo $row['Cedula']; ?>" value="<?php echo $row['Apellido2']; ?>">
   </div>
   <div class="form-group">
     <label for="al">Usuario</label>
-    <input type="text" class="form-control" id="al<?php echo $row['Cedula']; ?>" value="<?php echo $row['alamat']; ?>">
+    <input type="text" class="form-control" id="al<?php echo $row['Cedula']; ?>" value="<?php echo $row['Usuario']; ?>">
   </div>
 </form>
       
