@@ -48,10 +48,10 @@ while ($row = $rs->fetch_assoc()) {
                 
                 
                 <tr>
+        <td><?php echo $row['Cedula']; ?></td>
 	    <td><?php echo $row['Nombre']; ?></td>
 	    <td><?php echo $row['Apellido1']; ?></td>
 	    <td><?php echo $row['Apellido2']; ?></td>
-	    <td><?php echo $row['Cedula']; ?></td>
 	    <td><?php echo $row['UserID']; ?></td>
 	    <td>
 	    <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal<?php echo $row['kode']; ?>"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
