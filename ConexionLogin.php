@@ -52,8 +52,7 @@ if ($UserID == $NombreUsuario and $Clave == $Pass and $Tipo ==1 ){
      header("Location: MantenimientoAdministrador/IndexAdministrador.php");
 }if($UserID == $NombreUsuario and $Clave == $Pass and $Tipo ==2){
 //    redireciona a Mantenimiento de Profesores
-//     header("Location: MantenimientoAdministrador/IndexAdministrador.php");
+  header("Location: MantenimientoProfesor/IndexProfesor.php");
 }
 //header("Location: Index.php");
-
 ?>
