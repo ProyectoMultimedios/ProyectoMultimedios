@@ -114,7 +114,7 @@
             </ul>
           </li>
 
-               <li><a href="modMatricular/">Matricular</a></li>
+               <li><a href="MantenimientoMatricula/MantenimientoMatricula.php">Matricular</a></li>
 
 
                 <li><a href="logout.php">Salir</a></li>
