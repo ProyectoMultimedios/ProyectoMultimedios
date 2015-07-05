@@ -26,8 +26,8 @@
 	    <th>Nombre</th>
 	    <th>Apellido1</th>
 	    <th>Apellido2</th>
-	   
-	    
+
+
 	  </tr>
 	</thead>
 	<tbody>
@@ -46,11 +46,11 @@ if (mysqli_num_rows($rs)>0){
             while ($row = mysqli_fetch_row($rs)){
                        echo "<tr><td>$row[1]
                            </td><td>$row[2]
-                           
+
                            </td><td>$row[3]
                            </td><td>$row[4]
-                       
-                           
+
+
 							</td>
                            </tr>";
                 }

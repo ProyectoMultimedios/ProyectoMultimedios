@@ -28,7 +28,7 @@ if (mysqli_num_rows($rs)>0){
                        $Nombre = $row[2] ;
                         $Apellido1 = $row[3] ;
                           $Apellido2 = $row[4] ;
-                    
+
                   }
 
                            echo "

@@ -63,6 +63,21 @@
           	</ul>
           </li>
 
+
+
+               <li>
+          	<a href="#">Profesores</a>
+            <ul>
+
+<li><a href="FrmRegistroProfesor.php">Registrar Profesores</a></li>
+ <li><a href="buscarProfesor.php">Editar Profesores</a></li>
+<li><a href="FrmBuscarEliminar.php">Eliminar Profesores</a></li>
+<li><a href="Listar.php">Listar Profesores</a></li>
+
+
+            </ul>
+          </li>
+
                <li>
           	<a href="#">Estudiantes</a>
             <ul>

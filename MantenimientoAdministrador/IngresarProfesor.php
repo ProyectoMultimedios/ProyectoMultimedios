@@ -25,4 +25,6 @@ VALUES ('$Cedula', '$Nombre', '$Apellido1','$Apellido2')";
 
 $Profe= mysql_query($sql) or die ('error'. mysql_error());
 
+header("Location:FrmRegistroProfesor.php");
+?>
 ?>

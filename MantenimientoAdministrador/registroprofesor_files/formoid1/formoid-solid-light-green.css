@@ -55,7 +55,7 @@ html{
   line-height: 20px;
 }
 .formoid-solid-light-green .column{
-  float:left; 
+  float:left;
 }
 /* width = parseInt(100/columns.length)*/
 .formoid-solid-light-green .column1{ width:100%;}
@@ -125,7 +125,7 @@ html{
     -webkit-radial-gradient(0% 0%, ellipse farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 10%),/* top left white */
     -webkit-radial-gradient(90% 60%, ellipse farthest-side, rgba(0, 0, 0, 0.35) -10%, rgba(0, 0, 0, 0) 100%),/* center right black */
     -webkit-radial-gradient(20% 10%, circle farthest-side, rgba(0, 0, 0, 0.25) -10%, rgba(0, 0, 0, 0) 20%);
-  
+
   background-image:
     linear-gradient(85deg, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 20%), /* linear bottom */
     radial-gradient(40% 60%,ellipse farthest-side, rgba(255, 255, 255, 0.45) -10%, rgba(255, 255, 255, 0) 100%),/* center white */
@@ -233,7 +233,7 @@ Solid style
 /* Global Declaration */
 
 /*
-CORE FUNCTIONALITY 
+CORE FUNCTIONALITY
 
 Not advised to edit stuff below this line
 -----------------------------------------------------
@@ -514,7 +514,7 @@ Not advised to edit stuff below this line
   border-radius:3px;
 
   padding: 10px 10px 9px 2.3em;
-  
+
   outline:none;
   -o-box-sizing: border-box;
   box-sizing: border-box;
@@ -522,7 +522,7 @@ Not advised to edit stuff below this line
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: normal;
-  
+
   font-size: 1em;
 }
 .formoid-solid-light-green .element-address input[type=text],
@@ -685,8 +685,8 @@ Not advised to edit stuff below this line
 }
 
 /* type number */
-.formoid-solid-light-green input[type=number]::-webkit-inner-spin-button, 
-.formoid-solid-light-green input[type=number]::-webkit-outer-spin-button{ 
+.formoid-solid-light-green input[type=number]::-webkit-inner-spin-button,
+.formoid-solid-light-green input[type=number]::-webkit-outer-spin-button{
   -webkit-appearance: none;
 }
 
@@ -1018,9 +1018,9 @@ Not advised to edit stuff below this line
   background-color: #2ECC71;
 }
 
-/* .formoid-solid-light-green color scheme begin end *//* 
+/* .formoid-solid-light-green color scheme begin end *//*
 
-bootstrap 
+bootstrap
 
 */
 .formoid-solid-light-green .dropdown-menu {
@@ -1254,8 +1254,8 @@ bootstrap
   -webkit-transition: 0.25s;
   transition: 0.25s;
   -webkit-backface-visibility: hidden;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   z-index: 10;

@@ -246,10 +246,10 @@ function frmd_handler(){
 
     $request = &$_POST;
     if (0 == count($request)) return;
-    
+
     if (!file_exists(PROJECT_FILE)) return frmd_error('Project file not found.');
     $project = json_decode(file_get_contents(PROJECT_FILE), true);
-    
+
     $report = '';
 
     foreach ($project['elements'] as $elm){
@@ -270,7 +270,7 @@ function frmd_handler(){
         if ($elm['required'] && !$value)
             return frmd_error('Field is required.', $elm['name']);
         switch ($elm['type']){
-            
+
             case 'input':
             case 'textarea':
             case 'password':
@@ -282,7 +282,7 @@ function frmd_handler(){
                 if (!in_array($value, $elm['items']))
                     return frmd_error('Incorrect value.', $elm['name']);
                 break;
-            
+
             case 'checkbox':
             case 'multiple':
                 if (!$value) break;
@@ -291,7 +291,7 @@ function frmd_handler(){
                 if (array_diff($value, $elm['items']))
                     return frmd_error('Incorrect value.', $elm['name']);
                 break;
-            
+
             case 'date':
                 if ($value && (!preg_match('/^(\d{4})-(\d{2})-(\d{2})$/', $value, $m) || !checkdate((int)$m[2], (int)$m[3], (int)$m[1])))
                     return frmd_error('Please enter a valid date (yyyy-mm-dd).', $elm['name']);
@@ -310,13 +310,13 @@ function frmd_handler(){
                 if ($value && !preg_match('/^((([a-z]|\d|[!#$%&\'*+\-\/=?\^_`{|}~]|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])+(\.([a-z]|\d|[!#$%&\'*+\-\/=?\^_`{|}~]|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])|(\\\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])|(([a-z]|\d|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])([a-z]|\d|-|\.|_|~|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])*([a-z]|\d|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])))\.)+(([a-z]|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])|(([a-z]|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])([a-z]|\d|-|\.|_|~|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])*([a-z]|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])))\.?$/iu', $value))
                     return frmd_error('Please enter a valid email address.', $elm['name']);
                 break;
-            
+
             case 'url':
                 if ('http://' === $value) $value = '';
                 if ($value && !preg_match('/^(https?|s?ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])|(%[\da-f]{2})|[!\$&\'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])|(([a-z]|\d|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])([a-z]|\d|-|\.|_|~|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])*([a-z]|\d|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])))\.)+(([a-z]|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])|(([a-z]|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])([a-z]|\d|-|\.|_|~|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])*([a-z]|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])|(%[\da-f]{2})|[!\$&\'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])|(%[\da-f]{2})|[!\$&\'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])|(%[\da-f]{2})|[!\$&\'\(\)\*\+,;=]|:|@)|[\x{E000}-\x{F8FF}]|\/|\?)*)?(#((([a-z]|\d|-|\.|_|~|[\x{00A0}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFEF}])|(%[\da-f]{2})|[!\$&\'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/iu', $value))
                     return frmd_error('Please enter a valid URL.', $elm['name']);
                 break;
-            
+
             case 'name':
                 $original = array('first' => '', 'last' => '');
                 if (isset($value['first'], $value['last'])){
@@ -353,11 +353,11 @@ function frmd_handler(){
                 break;
 
             case 'file': break;
-            
+
             default:
                 $supported = false;
                 break;
-                
+
         }
         if ($supported){
             frmd_pre_save($elm, $value, $original);
@@ -369,11 +369,11 @@ function frmd_handler(){
             $report .= "\n\n";
         }
     }
-    
+
     frmd_save();
     frmd_mail($report);
     frmd_ready();
-    
+
 }
 
 frmd_handler();

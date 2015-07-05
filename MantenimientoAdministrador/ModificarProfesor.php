@@ -28,9 +28,9 @@ if (mysqli_num_rows($rs)>0){
                        $Nombre = $row[2] ;
                         $Apellido1 = $row[3] ;
                           $Apellido2 = $row[4] ;
-                          
-                           
-                     
+
+
+
                   }
 
                            echo "
@@ -40,11 +40,11 @@ if (mysqli_num_rows($rs)>0){
 
 
       <input type='hidden' alt='Txtid' name='Campo' value='$ID'>
-      
-      
+
+
       <br> <br><label for='' alt='lblCedula'><b>Cedula:</b> </label> &nbsp&nbsp
-      <input type='text' alt='TxtCedula' name='Cedula' value='$Cedula'> 
-      
+      <input type='text' alt='TxtCedula' name='Cedula' value='$Cedula'>
+
       <br> <br><label for='' alt='lblNombre'><b>Nombre:</b> </label> &nbsp&nbsp
       <input type='text' alt='TxtNombre' name='Nombre' value='$Nombre'> <br> <br>
 
@@ -54,9 +54,9 @@ if (mysqli_num_rows($rs)>0){
        <label for='' alt='lblApellido2'><b>Apellido 2:</b></label>
         <input type='text' alt='TxtApellido2' name='Apellido2' value='$Apellido2'> <br> <br>
 
-       
 
-        
+
+
 
 
 
