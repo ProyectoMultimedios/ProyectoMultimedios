@@ -23,10 +23,11 @@ class="icon-place"></span></span><span class="nameLast"><input placeholder=" Pri
 
 <div class="element-input"><label class="title"></label><div class="item-cont"><input class="large" type="text" name="Cedula" placeholder="Cedula"/><span class="icon-place"></span></div></div>
 
-<div class="element-input"><label class="title"></label><div class="item-cont"><input class="large" type="text" name="Usuario" placeholder="Usuario"/><span class="icon-place"></span></div></div>
 
-<div class="element-input"><label class="title"></label><div class="item-cont"><input class="large" type="text" name="Contrasena" placeholder="Contraseña"/><span class="icon-place"></span></div></div>
 
+<h4><li><a href="IndexAdministrador.php">
+Atras
+</a></li></h4>
 <div class="submit"><input type="submit" value="Registar"/></div></form><p class="frmd"><a href="http://formoid.com/v29.php">html contact form</a> Formoid.com 2.9</p><script type="text/javascript" src="registroprofesor_files/formoid1/formoid-solid-light-green.js"></script>
 <!-- Stop Formoid form-->
 

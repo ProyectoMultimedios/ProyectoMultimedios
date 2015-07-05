@@ -1,44 +1,28 @@
 <?php
-
+$Id = $_POST["Campo"];
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "multimedios2.0";
-$conn= mysql_connect ($servername, $username, $password);
-mysql_select_db('multimedios2.0');
-
-$conn = mysqli_connect("localhost", "root", "","Multimedios2.0") or die (mysql_error ());
-if(isset($_GET['id'])){
-    
-    $strSQL =  ("delete from profesores where Cedula=?");
-
-$strSQL->bind_param('s', $id);
-
-$id = $_GET['id'];
-
-if($sql->execute()){
-?>
-    
-<div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Success!</strong> Exitoso
-</div>
-<?php
-} else{
-?>
-<div class="alert alert-danger alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Error!</strong> Error 
-</div>
-<?php
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("fallo conexión: " . mysqli_connect_error());
 }
-} else{
-?> 
-<div class="alert alert-warning alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Warning!</strong> Hola.
-</div>
-<?php
+
+
+    $strSQL =  "delete from profesores  WHERE Id = $Id";
+
+if (mysqli_query($conn, $sql)) {
+    echo "Profesor Eliminado";
+    header("Location: Listar.php");
+    die();
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+mysqli_close($conn);
+
+
 ?>
 
