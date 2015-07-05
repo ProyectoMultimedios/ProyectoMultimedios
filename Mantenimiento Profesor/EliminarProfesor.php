@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Editar Datos</title>
+    <title>Eliminar Datos</title>
     <link rel="stylesheet" href="estilos.css">
     <script type="text/javascript" src="index_files/formoid1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="estilos.css">
@@ -37,7 +37,7 @@ if (mysqli_num_rows($rs)>0){
               <h1>Desea eliminar el profesor</h1>
 
 
-      <input type='hidden' alt='Txtid' name='Campo' value='$Id'>
+      <input type='hidden' alt='Txtid' name='Campo' value='$ID'>
       <br> <br><label for='' alt='lblNombre'><b>'$Nombre'</b> </label> &nbsp&nbsp
 
  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type='submit' value='Aceptar' > &nbsp
