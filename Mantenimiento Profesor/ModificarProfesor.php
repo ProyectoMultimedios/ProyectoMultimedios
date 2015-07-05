@@ -16,14 +16,14 @@ $Cedula = $_POST['Cedula'];
 
 $conn = mysqli_connect("localhost", "root", "","multimedios2.0") or die (mysql_error ());
 
-$StrgSQL =  "SELECT * FROM profesores WHERE Cedula= '$Cedula'";
+$StrgSQL =  "SELECT * FROM profesores where Cedula= '$Cedula'";
 $rs = mysqli_query($conn, $StrgSQL);
 
 
 if (mysqli_num_rows($rs)>0){
 
                   while ($row = mysqli_fetch_row($rs)){
-                      $Id= $row[0];
+                      $ID= $row[0];
                       $Cedula= $row[1];
                        $Nombre = $row[2] ;
                         $Apellido1 = $row[3] ;
@@ -39,7 +39,7 @@ if (mysqli_num_rows($rs)>0){
               <h1>Editar Datos</h1>
 
 
-      <input type='hidden' alt='Txtid' name='Campo' value='$Id'>
+      <input type='hidden' alt='Txtid' name='Campo' value='$ID'>
       
       
       <br> <br><label for='' alt='lblCedula'><b>Cedula:</b> </label> &nbsp&nbsp
