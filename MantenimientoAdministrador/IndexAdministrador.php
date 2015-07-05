@@ -48,6 +48,10 @@
                     <ul>
           		<li><a href="frmIngresarNivel.php">Agregar niveles</a>
                 </li>
+                <li><a href="frmListarNivel.php">Listar niveles</a>
+                <li><a href="frmListarSecciones.php">Listar Secciones</a>
+
+
 
 
           	</ul>
@@ -88,24 +92,31 @@
  <li><a href="FrmBuscarEstudianteEditar.php">Editar Estudiantes</a></li>
 <li><a href="FrmBuscarEstudianteEliminar.php">Eliminar Estudiantes</a></li>
 <li><a href="ListarEstudiantes.php">Listar Estudiantes</a></li>
-<li><a href="modPadres/">Padres</a></li>
-<li><a href="modParentesco/">Parentesco</a></li>
+            </ul>
+          </li>
+
+               <li>
+          	<a href="#">Encargados </a>
+            <ul>
+ <li><a href="FrmBuscarEncargadoEditar.php">Editar Encargado</a></li>
+<li><a href="FrmListarEncargado.php">Listar Encargados</a></li>
 
             </ul>
           </li>
+
 
                <li><a href="#">Secciones</a>
           	<ul>
             	<li><a href="modGrupos/">Grupos</a></li>
             	<li><a href="FrmAusenciasTardiasEscapadas.php">Asistencia</a></li>
                 <li><a href="FrmAgregarNotas.php">Notas</a></li>
-                <li><a href="modCursosGrupo/">Asignar Cursos</a></li>
+                <li><a href="">Asignar Cursos</a></li>
             </ul>
           </li>
 
                <li><a href="modMatricular/">Matricular</a></li>
 
-
+                <li><a href="PdfIndex.php">Integrantes</a></li>
                 <li><a href="logout.php">Salir</a></li>
             </ul>
         </div>
