@@ -86,7 +86,6 @@
  <li><a href="FrmBuscarEstudianteEditar.php">Editar Estudiantes</a></li>
 <li><a href="FrmBuscarEstudianteEliminar.php">Eliminar Estudiantes</a></li>
 <li><a href="ListarEstudiantes.php">Listar Estudiantes</a></li>
-
 <li><a href="modPadres/">Padres</a></li>
 <li><a href="modParentesco/">Parentesco</a></li>
 
@@ -96,8 +95,8 @@
                <li><a href="#">Secciones</a>
           	<ul>
             	<li><a href="modGrupos/">Grupos</a></li>
-            	<li><a href="modAsistencia/">Asistencia</a></li>
-                <li><a href="modNotas/">Notas</a></li>
+            	<li><a href="FrmAusenciasTardiasEscapadas.php">Asistencia</a></li>
+                <li><a href="FrmAgregarNotas.php">Notas</a></li>
                 <li><a href="modCursosGrupo/">Asignar Cursos</a></li>
             </ul>
           </li>
