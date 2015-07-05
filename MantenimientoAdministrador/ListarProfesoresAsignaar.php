@@ -55,7 +55,7 @@ while ($row = $rs->fetch_assoc()) {
 
 
 	    <td>
-	    <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal<?php echo $row['Cedula']; ?>"><span class="glyphicon glyphicon-pencil" aria-hidden="true"><a href="IngresarProfesor.php"></span></a>
+	    <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal<?php echo $row['Cedula']; ?>"><span class="glyphicon glyphicon-pencil" aria-hidden="true"><a href="AsignarProfesorCurso.php"></span></a>
 	    </a>
 
 
@@ -65,10 +65,10 @@ while ($row = $rs->fetch_assoc()) {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel<?php echo $row['Cedula']; ?>">Asignar Curso</h4><a href="IngresarProfesor.php"></a>
+        <h4 class="modal-title" id="myModalLabel<?php echo $row['Cedula']; ?>">Asignar Curso</h4><a href="AsignarProfesorCurso.php"></a>
       </div>
       <div class="modal-body">
-      <a href="IngresarProfesor.php"></a>
+      <a href="AsignarProfesorCurso.php"></a>
 
 <form>
   <div class="form-group">
@@ -89,7 +89,7 @@ while ($row = $rs->fetch_assoc()) {
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" onclick="updatedata('<?php echo $row['Cedula']; ?>')" class="btn btn-primary">Save changes</button>
+        <button type="button" onclick="AsignarProfesorCurso.php('<?php echo $row['Cedula']; ?>')" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
