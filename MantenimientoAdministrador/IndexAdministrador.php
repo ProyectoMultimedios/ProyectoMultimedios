@@ -56,7 +56,7 @@
                 <li>
                     <a href="#">Cursos</a>
                     <ul>
-          		<li><a href="modCursos/">Cursos</a>
+          		<li><a href="FrmAgregarCurso.php">Agregar Cursos</a>
                 </li>
 
                 <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
