@@ -110,13 +110,13 @@
             	<li><a href="modGrupos/">Grupos</a></li>
             	<li><a href="FrmAusenciasTardiasEscapadas.php">Asistencia</a></li>
                 <li><a href="FrmAgregarNotas.php">Notas</a></li>
-                <li><a href="modCursosGrupo/">Asignar Cursos</a></li>
+                <li><a href="">Asignar Cursos</a></li>
             </ul>
           </li>
 
                <li><a href="modMatricular/">Matricular</a></li>
 
-
+                <li><a href="PdfIndex.php">Integrantes</a></li>
                 <li><a href="logout.php">Salir</a></li>
             </ul>
         </div>
