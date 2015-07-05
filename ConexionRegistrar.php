@@ -64,8 +64,9 @@ $_SESSION["Error8"] = "Debe Seleccionar un Usuario";
 }if($UserID === $NombreUsuario){
 
 $_SESSION["Error9"] = "Este Nombre de Usuario ya Existe";
-
-}else{ // Si no hay ningun error me entrara a esta condicion
+}
+if($NombreUsuario !== "" and $Contrasena1 !== "" and $Contrasena2 !== "" and $Nombre !== "" and $Apellido1 !== "" and $Apellido2 !== "" and $Tipo !== 0) {
+// Si no hay ningun error me entrara a esta condicion
 //print "Exito";
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     if (!$conn) {
@@ -85,8 +86,4 @@ mysqli_close($conn);
 }
 
 header("Location: Registro.php");
-
-
 ?>
-
-
