@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,25 +46,52 @@
     					<div class="page-header" style="margin-top:5px;">
     						<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Inicio de Sesion</h3>
     					</div>
-    					<form class="form-horizontal" role="form">
+    					<form class="form-horizontal" role="form" method="post" action="ConexionLogin.php">
   						<div class="form-group">
     				<label style="text-Align:left" for="inputfn3" class="col-sm-3 control-label">Usuario</label> <br><br>
     							<div class="col-sm-10">
     								<div class="input-group">
     									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-      								<input type="user" class="form-control" id="inputfn3" placeholder="">
+      								<input type="user" class="form-control" id="inputfn3" placeholder="" name="NombreUsuario">
       							</div>
-    							</div>
+    <?php
+                  if (isset($_SESSION["Error1"])){
+                      echo "<br>";
+                      echo "<font color='red'>".$_SESSION["Error1"]."</font>";
+                      echo "<br>";
+                  }else{
+                      echo "";
+                  }
+                unset($_SESSION["Error1"]);
+
+                   ?>							</div>
+
   						</div>
   						<div class="form-group">
     							<label for="" class="col-sm-2 control-label">Contraseña</label> <br><br>
     							<div class="col-sm-10">
     								<div class="input-group">
     									<span class="input-group-addon">***</span>
-      								<input type="password" class="form-control" id="inputEmail3" placeholder="">
+      								<input type="password" class="form-control" id="inputEmail3" placeholder="" name="Pass">
       							</div>
+<?php
+                  if (isset($_SESSION["Error2"])){
+                      echo "<br>";
+                      echo "<font color='red'>".$_SESSION["Error2"]."</font>";
+                      echo "<br>";
+                  }if (isset($_SESSION["Error3"])){
+                      echo "<br>";
+                      echo "<font color='red'>".$_SESSION["Error3"]."</font>";
+                      echo "<br>";
+                  }else{
+                      echo "";
+                  }
+                unset($_SESSION["Error2"]);
+                unset($_SESSION["Error3"]);
 
+                   ?>
     							</div>
+
   						</div>
   						<div class="page-header" style="margin-top:5px;">
     					</div>
