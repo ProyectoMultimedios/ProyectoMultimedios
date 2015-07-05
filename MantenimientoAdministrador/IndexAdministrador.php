@@ -44,6 +44,16 @@
 
                 </li>
                 <li>
+                    <a href="#">Niveles</a>
+                    <ul>
+          		<li><a href="modCursos/">Agregar niveles</a>
+                </li>
+
+                <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
+          	</ul>
+          </li>
+
+                <li>
                     <a href="#">Cursos</a>
                     <ul>
           		<li><a href="modCursos/">Cursos</a>
@@ -56,11 +66,7 @@
                <li>
           	<a href="#">Estudiantes</a>
             <ul>
-<<<<<<< HEAD
-<li><a href="I.php">  IngregarEstudiantes</a></li>
-                <li><a href="InsertarEdudiante/">AgregarEstudiante</a></li>
-                <li><a href="modParentesco/">Parentesco</a></li>
-=======
+
 <li><a href="FrmingresarEstudiante.php">Ingresar Estudiantes</a></li>
  <li><a href="FrmBuscarEstudianteEditar.php">Editar Estudiantes</a></li>
 <li><a href="FrmBuscarEstudianteEliminar.php">Eliminar Estudiantes</a></li>
@@ -68,7 +74,7 @@
 
 <li><a href="modPadres/">Padres</a></li>
 <li><a href="modParentesco/">Parentesco</a></li>
->>>>>>> origin/master
+
             </ul>
           </li>
 
