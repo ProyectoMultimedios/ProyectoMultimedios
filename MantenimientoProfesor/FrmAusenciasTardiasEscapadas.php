@@ -20,8 +20,16 @@
 		<option value="Ausencia">Ausencia</option>
 		<option value="Tardía">Tardía</option>
 		<option value="Escapada">Escapada</option></select><span class="icon-place"></span></div></div></div>
-	<div class="element-input"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="text" name="input1" required="required" placeholder="Ingrese Sigla del curso"/><span class="icon-place"></span></div></div>
-<div class="submit"><input type="submit" value="Aceptar"/></div></form><p class="frmd"><a href="http://formoid.com/v29.php">html form</a> Formoid.com 2.9</p><script type="text/javascript" src="ausenciastardiasescapadas_files/formoid1/formoid-solid-blue.js"></script>
+	<div class="element-input"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="text" name="input1" required="required" placeholder="Ingrese Sigla del curso"/><span class="icon-place"></span></div></div><nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="IndexProfesor.php"><h1>Volver</h1></a></li>
+          </ul>
+        </nav>
+<div class="submit"><input type="submit" value="Aceptar"/></div>
+
+
+
+</form><p class="frmd"><a href="http://formoid.com/v29.php">html form</a> Formoid.com 2.9</p><script type="text/javascript" src="ausenciastardiasescapadas_files/formoid1/formoid-solid-blue.js"></script>
 <!-- Stop Formoid form-->
 
 
