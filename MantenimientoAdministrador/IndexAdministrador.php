@@ -41,7 +41,7 @@
                     <a href="#">
                         Inicio
                     </a>
-
+<li><a href="PdfIndex.php">Integrantes</a></li>
                 </li>
                 <li>
                     <a href="#">Niveles</a>
@@ -116,7 +116,7 @@
 
                <li><a href="modMatricular/">Matricular</a></li>
 
-                <li><a href="PdfIndex.php">Integrantes</a></li>
+
                 <li><a href="logout.php">Salir</a></li>
             </ul>
         </div>
