@@ -28,6 +28,11 @@ $select1 = mysql_query($sql) or die('error' . mysql_error());
 $select = mysql_fetch_array ($select1);
 $UserID = $select[0];
 
+$sql1 = "SELECT Id FROM usuarios WHERE UserID = '$NombreUsuario'";
+$select2 = mysql_query($sql1) or die('error' . mysql_error());
+$select3 = mysql_fetch_array ($select2);
+$IdUsuarios = $select3[0];
+
 //validacion de los campos
 if ($NombreUsuario == ""){
 
@@ -83,7 +88,10 @@ VALUES ('$NombreUsuario', '$Contrasena1', '$Nombre','$Apellido1','$Apellido2','$
 }
 
 mysqli_close($conn);
+
 }
+
+
 
 header("Location: Registro.php");
 ?>
