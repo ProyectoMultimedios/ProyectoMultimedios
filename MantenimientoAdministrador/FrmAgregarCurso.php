@@ -12,7 +12,7 @@
 <!-- Start Formoid form-->
 <link rel="stylesheet" href="registrocurso_files/formoid1/formoid-solid-dark.css" type="text/css" />
 <script type="text/javascript" src="registrocurso_files/formoid1/jquery.min.js"></script>
-<form class="formoid-solid-dark" style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:400px;min-width:150px" method="post"action="IngresarCursos.php"><div class="title"><h2>Agregar Curso</h2></div>
+<form class="formoid-solid-dark" style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:400px;min-width:150px" method="post"action="AgregarCursos.php"><div class="title"><h2>Agregar Curso</h2></div>
 	<div class="element-input"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="text" name="input" required="required" placeholder="Ingrese el nombre del curso"/><span class="icon-place"></span></div></div>
 	<div class="element-input"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="text" name="input1" required="required" placeholder="Ingrese la sigla del curso"/><span class="icon-place"></span></div></div>
 <h4><li><a href="IndexAdministrador.php">

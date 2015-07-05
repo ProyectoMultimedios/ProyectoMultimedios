@@ -59,6 +59,8 @@
           		<li><a href="FrmAgregarCurso.php">Agregar Cursos</a>
                 </li>
 
+                <li><a href="ListarCursos.php">Listar Cursos</a></li>
+
                 <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
           	</ul>
           </li>
