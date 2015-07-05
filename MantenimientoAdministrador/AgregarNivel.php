@@ -21,22 +21,17 @@ $Nivel= mysql_query($sql) or die ('error'. mysql_error());
 
 
 
-$sql1 = "SELECT Id FROM Niveles where ";
+$sql1 = "SELECT * FROM Niveles ORDER BY id DESC LIMIT 1; ";
 $select= mysql_query($sql1) or die ('error'. mysql_error());
 $select = mysql_fetch_array($select);
-echo $select[0];
 
+$sql2 = "INSERT INTO secciones (Seccion_Numero, Niveles_Id)
+VALUES('$grup','$select[0]')";
 
-
-/*$sql2 = "INSERT INTO secciones (Seccion_Numero, Niveles_Id)
-VALUES('$Grupos','$select[0]')";
-$Secciones= mysql_query($sql2) or die ('error'. mysql_error());*/
-
-/*for($i=1; $i=$Grupos; $i++){
-$Nivel=$i .$Seccion;
-echo $Secciones;
+for($i=1; $i<$Grupos; $i++){
+$grup=$i;
 $Secciones= mysql_query($sql2) or die ('error'. mysql_error());
-};*/
+};
 
 /*$sql1 = "SELECT IdPadres FROM padres where Identificacion = '$Identificacion' ";
 
