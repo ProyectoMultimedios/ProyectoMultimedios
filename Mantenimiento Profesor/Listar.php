@@ -26,7 +26,6 @@
 	    <th>Apellido1</th>
 	    <th>Apellido2</th>
 	   
-	    <th>Contraseña</th>
 	    
 	  </tr>
 	</thead>
@@ -50,8 +49,7 @@ if (mysqli_num_rows($rs)>0){
                            </td><td>$row[3]
                            </td><td>$row[4]
                        
-                           </td><td>$row[6]
-                           </td><td>
+                           
 							</td>
                            </tr>";
                 }
