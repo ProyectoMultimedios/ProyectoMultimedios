@@ -19,7 +19,7 @@ if (!$conn) {
     die("fallo conexión: " . mysqli_connect_error());
 }
 
-$sql = "UPDATE profesores SET Nombre = '$Nombre' ,Apellido1 = '$Apellido1', Apellido2 = '$Apellido2' , Cedula = '$Cedula'  WHERE Id = $Id";
+$sql = "UPDATE Profesores SET Nombre = '$Nombre' ,Apellido1 = '$Apellido1', Apellido2 = '$Apellido2' , Cedula = '$Cedula'  WHERE Id = $Id";
 
 if (mysqli_query($conn, $sql)) {
     echo "Profesor Actualizado";

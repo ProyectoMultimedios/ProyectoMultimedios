@@ -16,7 +16,7 @@ $Cedula = $_POST['Cedula'];
 
 $conn = mysqli_connect("localhost", "root", "","multimedios2.0") or die (mysql_error ());
 
-$StrgSQL =  "SELECT * FROM profesores where Cedula= '$Cedula'";
+$StrgSQL =  "SELECT * FROM Profesores WHERE Cedula= '$Cedula'";
 $rs = mysqli_query($conn, $StrgSQL);
 
 
