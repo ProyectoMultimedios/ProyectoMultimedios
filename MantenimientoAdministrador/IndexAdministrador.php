@@ -102,7 +102,7 @@
           </li>
 
                <li><a href="modMatricular/">Matricular</a></li>
-          <li><a href="modPersonal/">Personal</a></li>
+
 
                 <li><a href="logout.php">Salir</a></li>
             </ul>
