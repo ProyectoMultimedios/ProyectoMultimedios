@@ -48,6 +48,10 @@
                     <ul>
           		<li><a href="frmIngresarNivel.php">Agregar niveles</a>
                 </li>
+                <li><a href="frmListarNivel.php">Listar niveles</a>
+                <li><a href="frmListarSecciones.php">Listar Secciones</a>
+
+
 
                 <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
           	</ul>
@@ -88,11 +92,18 @@
  <li><a href="FrmBuscarEstudianteEditar.php">Editar Estudiantes</a></li>
 <li><a href="FrmBuscarEstudianteEliminar.php">Eliminar Estudiantes</a></li>
 <li><a href="ListarEstudiantes.php">Listar Estudiantes</a></li>
-<li><a href="modPadres/">Padres</a></li>
-<li><a href="modParentesco/">Parentesco</a></li>
+            </ul>
+          </li>
+
+               <li>
+          	<a href="#">Encargados </a>
+            <ul>
+ <li><a href="FrmBuscarEncargadoEditar.php">Editar Encargado</a></li>
+<li><a href="FrmListarEncargado.php">Listar Encargados</a></li>
 
             </ul>
           </li>
+
 
                <li><a href="#">Secciones</a>
           	<ul>
