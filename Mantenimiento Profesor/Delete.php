@@ -12,7 +12,7 @@ if (!$conn) {
 }
 
 
-    $strSQL =  "delete from profesores where WHERE Id = $Id";
+    $strSQL =  "delete from profesores  WHERE Id = $Id";
 
 if (mysqli_query($conn, $sql)) {
     echo "Profesor Eliminado";

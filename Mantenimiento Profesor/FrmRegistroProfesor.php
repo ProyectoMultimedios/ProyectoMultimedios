@@ -23,7 +23,7 @@ class="icon-place"></span></span><span class="nameLast"><input placeholder=" Pri
 
 <div class="element-input"><label class="title"></label><div class="item-cont"><input class="large" type="text" name="Cedula" placeholder="Cedula"/><span class="icon-place"></span></div></div>
 
-<
+
 
 <h4><li><a href="IndexAdministrador.php">
 Atras
