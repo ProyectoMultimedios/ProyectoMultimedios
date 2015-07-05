@@ -49,7 +49,7 @@
           		<li><a href="frmIngresarNivel.php">Agregar niveles</a>
                 </li>
 
-                <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
+
           	</ul>
           </li>
 
@@ -61,7 +61,7 @@
 
                 <li><a href="ListarCursos.php">Listar Cursos</a></li>
 
-                <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
+                <li><a href="FrmBuscarAsignarProfesor.php">Asignar Profesor</a></li>
           	</ul>
           </li>
 
