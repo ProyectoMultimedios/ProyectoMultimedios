@@ -21,7 +21,7 @@ $dbname = "multimedios2.0";
 
 // Create connection
 $conn= mysql_connect ($servername, $username, $password);
-mysql_select_db('multimedios2.0');
+mysql_select_db ('multimedios2.0');
 
 $sql = "SELECT UserID FROM usuarios WHERE UserID = '$NombreUsuario'";
 $select1 = mysql_query($sql) or die('error' . mysql_error());
