@@ -21,7 +21,7 @@ $select1= mysql_query($sql1) or die ('error'. mysql_error());
 $select1 = mysql_fetch_array($select1);
 
 $sql2 = "INSERT INTO ausencias_tardias_escapadas (Estudiantes_Matriculados_Id, Curso_Nivel_Id, Fecha, Tipo)
-VALUES ( $select[0],' $select1[0]','$Fecha','$date')";
+VALUES ( $select[0],' $select1[0]','$date','$Tipo')";
 
 $alumno= mysql_query($sql2) or die ('error'. mysql_error());
 
