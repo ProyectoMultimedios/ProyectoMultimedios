@@ -53,7 +53,7 @@
 
 
 
-                <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
+
           	</ul>
           </li>
 
@@ -63,9 +63,14 @@
           		<li><a href="FrmAgregarCurso.php">Agregar Cursos</a>
                 </li>
 
+                <li><a href="FrmEliminarCurso.php">Eliminar Cursos</a>
+                </li>
+
+                <li><a href="FrmBuscarCursosEditar.php">Editar Cursos</a>
+                </li>
+
                 <li><a href="ListarCursos.php">Listar Cursos</a></li>
 
-                <li><a href="modAsignarCurso/index.php">Asignar Profesor</a></li>
           	</ul>
           </li>
 
@@ -104,20 +109,10 @@
             </ul>
           </li>
 
-
-               <li><a href="#">Secciones</a>
-          	<ul>
-            	<li><a href="modGrupos/">Grupos</a></li>
-            	<li><a href="FrmAusenciasTardiasEscapadas.php">Asistencia</a></li>
-                <li><a href="FrmAgregarNotas.php">Notas</a></li>
-                <li><a href="">Asignar Cursos</a></li>
-            </ul>
-          </li>
-
                <li><a href="MantenimientoMatricula/MantenimientoMatricula.php">Matricular</a></li>
 
 
-                <li><a href="logout.php">Salir</a></li>
+
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->

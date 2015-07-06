@@ -27,16 +27,9 @@ if (!$conn) {
 
 $conn= mysql_connect ($servername, $username, $password);
 mysql_select_db('multimedios2.0');
-
-
-
-
 $sql = "INSERT INTO padres (Nombre, Apellido1,Apellido2, Identificacion, telefono, Estado )
 VALUES('$NombreEncargado','$ApellidoEncargado','$Apellido2Encargado','$Identificacion','$Telefono','Activo')";
-
 $sql1 = "SELECT IdPadres FROM padres where Identificacion = '$Identificacion' ";
-
-
 $Padre= mysql_query($sql) or die ('error'. mysql_error());
 $select= mysql_query($sql1) or die ('error'. mysql_error());
 $select = mysql_fetch_array($select);

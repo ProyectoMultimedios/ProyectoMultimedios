@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Listar Cursos</title>
+  <title>Asignaciones</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -16,17 +16,24 @@
 
 <div class="container">
 
-    <h1>Listado de Cursos</h1>
+    <h1>Listado de Cursos Niveles y Profesor</h1>
 
   <table class="table table-hover">
     <thead>
       <tr>
        <th>Nombre</th>
-        <th>Sigla</th>
-
+        <th>Apellido1</th>
+        <th>Apellido2</th>
+        <th>Cedula</th>
+        <th>SiglaCurso</th>
+        <th>NombreCurso</th>
+        <th>Nivel</th>
       </tr>
     </thead>
     <tbody>
+
+
+
 
 
        <?php
@@ -34,16 +41,19 @@
 
 $conn = mysqli_connect("localhost", "root", "","Multimedios2.0") or die (mysql_error ());
 
-$strSQL =  "SELECT * FROM Cursos";
+$strSQL =  "SELECT * FROM curso_nivel_profesor";
 $rs = mysqli_query($conn, $strSQL);
 
         if (mysqli_num_rows($rs)>0){
 
             while ($row = mysqli_fetch_row($rs)){
                        echo "<tr><td>$row[2]
-                           </td><td>$row[1]
-
-
+                           </td><td>$row[3]
+                           </td><td>$row[4]
+                           </td><td>$row[5]
+                           </td><td>$row[6]
+                           </td><td>$row[7]
+                           </td><td>
 							</td>
                            </tr>";
                 }
