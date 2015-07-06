@@ -109,7 +109,7 @@
             </ul>
           </li>
 
-               <li><a href="MantenimientoMatricula/MantenimientoMatricula.php">Matricular</a></li>
+               <li><a href="MantenimientoMatricula/index.php">Matricular</a></li>
 
 
 
