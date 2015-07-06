@@ -17,10 +17,8 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("fallo conexión: " . mysqli_connect_error());
 }*/
-
 $conn= mysql_connect ($servername, $username, $password);
 mysql_select_db('multimedios2.0');
-
 $sql = "SELECT Id FROM estudiantes_matriculados where Id = '$IdEstudiante' ";
 $select= mysql_query($sql) or die ('error'. mysql_error());
 $select = mysql_fetch_array($select);

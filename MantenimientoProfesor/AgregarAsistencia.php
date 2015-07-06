@@ -13,10 +13,10 @@ $dbname = "multimedios2.0";
 $conn= mysql_connect ($servername, $username, $password);
 mysql_select_db('multimedios2.0');
 
-$sql = "SELECT Estudiantes_Id FROM estudiantes_matriculados where Carnet = '$Carnet' ";
+$sql = "SELECT Id FROM estudiantes_matriculados where Id = '$Carnet' ";
 $select= mysql_query($sql) or die ('error'. mysql_error());
 $select = mysql_fetch_array($select);
-$sql1 = "SELECT Curso_Id FROM curso_nivel_profesor where Curso = '$Curso' ";
+$sql1 = "SELECT Id FROM curso_nivel_profesor where Id = '$Curso' ";
 $select1= mysql_query($sql1) or die ('error'. mysql_error());
 $select1 = mysql_fetch_array($select1);
 
