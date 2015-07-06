@@ -40,5 +40,5 @@ $select = mysql_fetch_array($select);
 
 
 
-header("Location:FrmBuscarAsignarProfesor.php");
+header("Location:ListarProfesoresAsignar.php");
 ?>

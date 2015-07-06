@@ -117,7 +117,7 @@
                <li><a href="MantenimientoMatricula/MantenimientoMatricula.php">Matricular</a></li>
 
 
-                <li><a href="logout.php">Salir</a></li>
+                <li><a href="Salir.php">Salir</a></li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
