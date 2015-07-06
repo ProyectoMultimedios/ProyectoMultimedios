@@ -116,7 +116,7 @@
             	<li><a href="modGrupos/">Grupos</a></li>
             	<li><a href="FrmAusenciasTardiasEscapadas.php">Asistencia</a></li>
                 <li><a href="FrmAgregarNotas.php">Notas</a></li>
-                <li><a href="">Asignar Cursos</a></li>
+
             </ul>
           </li>
 
