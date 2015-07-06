@@ -11,12 +11,12 @@ $username = "root";
 $password = "";
 $dbname = "multimedios2.0";
 
-// Create connection
-/*$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
+ Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+ Check connection
 if (!$conn) {
     die("fallo conexión: " . mysqli_connect_error());
-}*/
+}
 
 $conn= mysql_connect ($servername, $username, $password);
 mysql_select_db('multimedios2.0');
