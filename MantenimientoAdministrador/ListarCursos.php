@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Listar Cursos</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -43,7 +43,7 @@ $rs = mysqli_query($conn, $strSQL);
                        echo "<tr><td>$row[2]
                            </td><td>$row[1]
 
-                           </td><td>
+
 							</td>
                            </tr>";
                 }

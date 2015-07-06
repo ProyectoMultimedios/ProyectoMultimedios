@@ -63,6 +63,12 @@
           		<li><a href="FrmAgregarCurso.php">Agregar Cursos</a>
                 </li>
 
+                <li><a href="FrmEliminarCurso.php">Eliminar Cursos</a>
+                </li>
+
+                <li><a href="FrmBuscarCursosEditar.php">Editar Cursos</a>
+                </li>
+
                 <li><a href="ListarCursos.php">Listar Cursos</a></li>
 
                 <li><a href="FrmBuscarAsignarProfesor.php">Asignar Profesor</a></li>

@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Buscar Profesor</title>
+    <title>Buscar curso a Eliminar</title>
     <link rel="stylesheet" href="estilos.css" >
 
 </head>
 
 <body>
 
-     <img id="bg" src="BuscarProfesor.png"  alt="background">
+     <img id="bg" src="eliminarprofe.jpg"  alt="background">
 
-     <form class="form-horizontal" role="form" method="post" action="ListarCursoProfesorNivel.php" >
+     <form class="form-horizontal" role="form" method="post" action="EliminarCurso.php" >
 
 
             <div>
-             <h1>Ingrese los Datos Del Profesor que Desea Asignar Curso</h1>
+             <h1>Ingrese los Datos Del curso a eliminar</h1>
 
-             <br><label for="" alt="lblCedula"><b>Numero de cedula:</b> </label>
-      <input type="text" alt="TxtCedula" name="Cedula"> <br> <br>
+             <br><label for="" alt="lblSigla"><b>Sigla del curso:</b> </label>
+      <input type="text" alt="TxtSigla" name="Sigla"> <br> <br>
 
 <input type="submit" value="Aceptar" >
            <input type="submit" value="Limpiar" >
@@ -44,3 +44,4 @@
 </body>
 
 </html>
+
