@@ -109,15 +109,6 @@
             </ul>
           </li>
 
-
-               <li><a href="#">Secciones</a>
-          	<ul>
-            	<li><a href="FrmAusenciasTardiasEscapadas.php">Asistencia</a></li>
-                <li><a href="FrmAgregarNotas.php">Notas</a></li>
-
-            </ul>
-          </li>
-
                <li><a href="MantenimientoMatricula/MantenimientoMatricula.php">Matricular</a></li>
 
 
