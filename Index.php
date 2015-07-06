@@ -52,13 +52,14 @@ session_start();
     							<div class="col-sm-10">
     								<div class="input-group">
     									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-      								<input type="user" class="form-control" id="inputfn3" placeholder="" name="NombreUsuario">
+      								<input type="user" class="form-control" id="inputfn3" placeholder="" name="NombreUsuario" >
       							</div>
     <?php
-                  if (isset($_SESSION["Error1"])){
+ if (isset($_SESSION["Error1"])){
                       echo "<br>";
                       echo "<font color='red'>".$_SESSION["Error1"]."</font>";
                       echo "<br>";
+      unset($_SESSION["Error3"]);
                   }else{
                       echo "";
                   }

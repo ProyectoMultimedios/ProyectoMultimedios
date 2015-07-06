@@ -37,22 +37,24 @@ $Clave = $select5[0];
 if ($NombreUsuario == ""){
 
 $_SESSION["Error1"] = "Ingrese su Nombre de Usuario";
-
+header("Location: Index.php");
 }if ($Pass == ""){
 
     $_SESSION["Error2"] = "Ingrese su Contraseña";
+    header("Location: Index.php");
 
-}elseif ($NombreUsuario !== $UserID or $Pass !== $Clave){
+}elseif (($NombreUsuario !== $UserID or $Pass !== $Clave) and ($UserID !== "" and $Clave !== "" )){
 
     $_SESSION["Error3"] = "Cuenta Invalida o Datos Incorrectos";
-
+header("Location: Index.php");
 }
 if ($UserID == $NombreUsuario and $Clave == $Pass and $Tipo ==1 ){
 //    redireciona a Mantenimiento de Administradores
-     header("Location: MantenimientoAdministrador/IndexAdministrador.php");
+     header("Location:MantenimientoAdministrador/IndexAdministrador.php");
 }if($UserID == $NombreUsuario and $Clave == $Pass and $Tipo ==2){
 //    redireciona a Mantenimiento de Profesores
-  header("Location: MantenimientoProfesor/IndexProfesor.php");
+//     header("Location: MantenimientoAdministrador/IndexAdministrador.php");
 }
-//header("Location: Index.php");
+
+
 ?>
