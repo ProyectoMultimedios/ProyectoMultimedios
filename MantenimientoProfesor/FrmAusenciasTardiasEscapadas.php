@@ -20,7 +20,7 @@
 		<option value="1">Ausencia</option>
 		<option value="2">Tardía</option>
 		<option value="3">Escapada</option></select><span class="icon-place"></span></div></div></div>
-	<div class="element-input"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="text" name="Curso" required="required" placeholder="Ingrese Sigla del curso"/><span class="icon-place"></span></div></div><nav>
+	<div class="element-input"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="text" name="Curso" required="required" placeholder="Ingrese Id del curso"/><span class="icon-place"></span></div></div><nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" ><a href="IndexProfesor.php"><h1>Volver</h1></a></li>
           </ul>
