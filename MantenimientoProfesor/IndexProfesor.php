@@ -53,7 +53,10 @@
 
             </ul>
           </li>
-                <li><a href="logout.php">Salir</a></li>
+
+
+
+               <li><a href="">Salir</a></li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
