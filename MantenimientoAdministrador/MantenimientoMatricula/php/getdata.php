@@ -105,7 +105,7 @@ while ($row = $res->fetch_assoc()) {
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-        <button type="button" onclick="updatedata('<?php echo $row['Id']; ?>')" class="btn btn-primary">Save changes</button>
+        <button type="button" onclick="updatedata('<?php echo $row['Id']; ?>')" class="btn btn-primary">Matricular</button>
         </form>
 <!--     cierra form-->
       </div>
